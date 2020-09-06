@@ -20,6 +20,7 @@ import home.views, articles.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home.views.homepage, name='home'),
-    path('articles/', articles.views.articles_page, name='articles-page')
+    path('articles/', articles.views.articles_page, name='articles-page'),
+    path('about/', about.views.about_page, name='about-page')
 ]
  
