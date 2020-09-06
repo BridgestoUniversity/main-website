@@ -5,3 +5,6 @@ def about_page(request):
 
 def our_team(request):
     return HttpResponse("This is the Bridges Team Intro Page")
+
+def get_involved(request):
+    return HttpResponse("This is the Bridges Get Involved Page")
