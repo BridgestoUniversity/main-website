@@ -57,7 +57,7 @@ ROOT_URLCONF = 'bridgesWebsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,3 +121,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Note that BASE_DIR is the directory where manage.py lies
+# Setting STATICFILES_DIRS to access the outmost static folder enables the use of specific static files throughout all apps
+# Will most commonly be used for getting access to our images
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
