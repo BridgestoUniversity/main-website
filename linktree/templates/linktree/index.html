@@ -5,16 +5,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Linktree</title>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"
     ></script>
-    <script src="{% static 'contact/app.js'%}"></script>
+    <script src="{% static 'linktree/app.js'%}"></script>
     <link
       rel="stylesheet"
-      href="{% static 'contact/style.css'%}"
+      href="{% static 'linktree/style.css'%}"
       type="text/css"
     />
     <link
@@ -53,147 +53,76 @@
       </div>
     </nav>
 
-    <section class="hero">
-      <div class="hero-content-container">
-        <div class="head-container">
-          <h2 class="hero-text">Get in touch!</h2>
-          <img
-            class="brush-stroke"
-            src="{% static 'images/brush-effect.png'%}"
-            alt=""
-          />
-        </div>
-        <p class="hero-para">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          imperdiet ligula at aliquam iaculis. Nulla nec porta sem, vitae
-          vulputate neque. Nunc magna dui, feugiat a quam vitae, mattis accumsan
-          leo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore,
-          impedit.
-        </p>
-
-        <ul class="hero-links">
-          <li><a class="hero-link-item">Instagram</a></li>
-          <li><a class="hero-link-item">LinkedIn</a></li>
-          <li><a class="hero-link-item">Email</a></li>
-        </ul>
-      </div>
-      <div class="hero-image-container">
-        <img
-          class="hero-image"
-          src="{% static 'images/contact-illustration.svg'%}"
-          alt=""
-        />
-      </div>
-    </section>
-
-    <section class="message-section">
-      <div class="head-container">
-        <h3 class="sub-text">Send a Message!</h3>
-        <img
-          class="brush-stroke-sub"
-          src="{% static 'images/brush-effect.png'%}"
-          alt=""
-        />
-      </div>
-
-      <div class="section-container">
-        <form class="message-form" method="POST" action="">
-          <label class="input-labels" for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Ex: John Doe"
-            required
-          />
-          <label class="input-labels" for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="johndoe@gmail.com"
-            required
-          />
-          <label class="input-labels" for="message">Message</label>
-          <textarea
-            id="message-input"
-            name="message"
-            placeholder="hello!"
-          ></textarea>
-          <input
-            type="submit"
-            value="Send!"
-            class="accent-button submit-button"
-          />
-        </form>
-        <div class="flex-container">
-          <div class="message-image">
+    <div class="main-container">
+      <section class="hero">
+        <div class="hero-content-container">
+          <div class="head-container">
+            <h2 class="hero-text">Get in touch!</h2>
             <img
-              id="airplane-image"
-              src="{% static 'images/message-illustration.svg'%}"
+              class="brush-stroke"
+              src="{% static 'images/brush-effect.png'%}"
               alt=""
             />
           </div>
+          <p class="hero-para">
+            Feel free to reach out and send a message or view some of our
+            content on other platforms! Let us know what you think, and
+            potentially any suggestions you may have. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Sed, pariatur!
+          </p>
+
+          <ul class="hero-links">
+            <li><a class="hero-link-item">Instagram</a></li>
+            <li><a class="hero-link-item">LinkedIn</a></li>
+            <li><a class="hero-link-item">Medium</a></li>
+            <li><a class="hero-link-item">Website</a></li>
+            <li><a class="hero-link-item">Email</a></li>
+          </ul>
         </div>
-      </div>
-    </section>
+        <div class="hero-image-container">
+          <img
+            class="hero-image"
+            src="{% static 'images/contact-illustration.svg'%}"
+            alt=""
+          />
+        </div>
+      </section>
 
-    <section class="privacy-section">
-      <div class="head-container">
-        <h3 class="sub-sub-text">Privacy Policy</h3>
-        <img
-          class="brush-stroke-sub-sub"
-          src="{% static 'images/brush-effect.png'%}"
-          alt=""
-        />
-      </div>
-      <div class="privacy-container">
-        <p class="privacy-intro">
-          This privacy notice applies to all information collected through our
-          Services (which, as described above, includes our Website, Sign Up
-          Form and Social Media Platforms), as well as any related services,
-          sales, marketing or events. Please read this privacy notice carefully
-          as it will help you understand what we do with the information that we
-          collect.
-        </p>
-
-        <a target="_blank" class="privacy-button">View Privacy Policy</a>
-      </div>
-    </section>
-
-    <!-- footer section starts here: -->
-    <footer class="footer-container">
-      <div class="footer-content">
-        <p class="footer-slogan">
-          <span>Bridges to Success.</span> <span>Bridges to Connections.</span>
-          <span>Bridges to University.</span>
-        </p>
-        <ul>
-          <li><a href="#" class="footer-item">Home</a></li>
-          <li><a href="#" class="footer-item">Articles</a></li>
-          <li><a href="#" class="footer-item">About</a></li>
-          <li><a href="#" class="footer-item">Contact</a></li>
-          <li><a href="#" class="footer-item">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
-        <p class="copyright-text">Bridges © 2020</p>
-      </div>
-      <div class="footer-links">
-        <!-- Add LinkedIn Link Vector Here -->
-        <a class="footer-link linkedin-link"
-          ><img class="" src="{% static 'images/linkedin.svg'%}" alt="" />
-        </a>
-        <a class="footer-link youtube-link"
-          ><img class="" src="{% static 'images/youtube.svg'%}" alt=""
-        /></a>
-        <a class="footer-link instagram-link"
-          ><img class="" src="{% static 'images/instagram.svg'%}" alt="" />
-        </a>
-        <!-- Add YouTube Link Vector Here -->
-        <!-- Add Instagram Link Vector Here -->
-      </div>
-    </footer>
+      <!-- footer section starts here: -->
+      <footer class="footer-container">
+        <div class="footer-content">
+          <p class="footer-slogan">
+            <span>Bridges to Success.</span>
+            <span>Bridges to Connections.</span>
+            <span>Bridges to University.</span>
+          </p>
+          <ul>
+            <li><a href="#" class="footer-item">Home</a></li>
+            <li><a href="#" class="footer-item">Articles</a></li>
+            <li><a href="#" class="footer-item">About</a></li>
+            <li><a href="#" class="footer-item">Contact</a></li>
+            <li><a href="#" class="footer-item">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
+          <p class="copyright-text">Bridges © 2020</p>
+        </div>
+        <div class="footer-links">
+          <!-- Add LinkedIn Link Vector Here -->
+          <a class="footer-link linkedin-link"
+            ><img class="" src="{% static 'images/linkedin.svg'%}" alt="" />
+          </a>
+          <a class="footer-link youtube-link"
+            ><img class="" src="{% static 'images/youtube.svg'%}" alt=""
+          /></a>
+          <a class="footer-link instagram-link"
+            ><img class="" src="{% static 'images/instagram.svg'%}" alt="" />
+          </a>
+          <!-- Add YouTube Link Vector Here -->
+          <!-- Add Instagram Link Vector Here -->
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
