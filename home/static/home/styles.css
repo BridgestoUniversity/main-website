@@ -377,6 +377,10 @@ body {
   margin-right: 15px;
 }
 
+.footer-item:hover {
+  color: var(--accent);
+}
+
 .footer-content ul li:first-of-type .footer-item {
   color: var(--accent);
   font-weight: 400;

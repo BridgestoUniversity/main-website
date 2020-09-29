@@ -616,6 +616,10 @@ textarea {
   margin-right: 15px;
 }
 
+.footer-item:hover {
+  color: var(--accent);
+}
+
 /* .footer-content ul li:nth-of-type(4) .footer-item {
   color: var(--accent);
   font-weight: 400;
