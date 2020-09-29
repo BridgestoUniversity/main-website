@@ -1136,6 +1136,10 @@ body {
     font-size: 2em;
   }
 
+  .hero-para {
+    font-size: 1.1em;
+  }
+
   .brush-stroke {
     height: 35px;
     top: 5px;

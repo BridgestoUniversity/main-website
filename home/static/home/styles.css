@@ -631,6 +631,17 @@ body {
     /* opacity: 0.8; */
   }
 
+  .hero-content-container {
+    top: 10%;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
   .footer-slogan {
     font-size: 1em;
   }

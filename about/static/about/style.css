@@ -447,7 +447,7 @@ body {
   margin-right: 15px;
 }
 
-.footer-content ul li:first-of-type .footer-item {
+.footer-content ul li:nth-of-type(3) .footer-item {
   color: var(--accent);
   font-weight: 400;
 }
@@ -743,6 +743,17 @@ body {
     /* opacity: 0.8; */
   }
 
+  .hero-content-container {
+    top: 10%;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
   .footer-slogan {
     font-size: 1em;
   }
@@ -785,6 +796,24 @@ body {
   .footer-container {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+
+  .footer-item {
+    line-height: 25px;
+  }
+
+  .footer-slogan {
+    text-align: center;
+  }
+
+  .footer-slogan span {
+    display: inline-block;
+  }
+
+  .footer-content ul {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .footer-content {
@@ -805,9 +834,27 @@ body {
     font-size: 2em;
   }
 
+  .hero-para {
+    font-size: 1.1em;
+  }
+
+  .sub-text {
+    font-size: 1.8em;
+  }
+
+  .section-content p {
+    font-size: 1.1em;
+  }
+
   .brush-stroke {
     height: 35px;
     top: 5px;
+    left: -15px;
+  }
+
+  .brush-stroke-sub {
+    height: 35px;
+    top: 1px;
     left: -15px;
   }
 }
