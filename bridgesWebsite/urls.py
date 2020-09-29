@@ -27,5 +27,5 @@ urlpatterns = [
     path('articles/', articles.views.articles_page, name='articles-page'),
     path('about/', include('about.urls')),
     path('contact/', contact.views.contactpage, name='contact-page'),
-    path('get-in-touch/', linktree.views.linktree_page, name='linktree')
+    path('linktree/', linktree.views.linktree_page, name='linktree')
 ]

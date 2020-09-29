@@ -90,18 +90,18 @@ body {
 }
 
 .nav-item:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 
-.nav-items ul li:last-of-type .nav-item:hover{
-    color: black;
-    background-color: var(--hover);
+.nav-items ul li:last-of-type .nav-item:hover {
+  color: black;
+  background-color: var(--hover);
 }
 
 /* .nav-items li:nth-of-type(3) a {
-  font-weight: 400;
-  /* letter-spacing: 0.5px; */
-  /* color: var(--accent); */
+    font-weight: 400;
+    /* letter-spacing: 0.5px; */
+/* color: var(--accent); */
 /* } */
 
 .nav-items li:last-of-type a {
@@ -461,58 +461,58 @@ textarea {
   font-weight: 500;
 }
 
-.sub-sub-text{
-    font-size: 1.4em;
-    font-weight: 500;
+.sub-sub-text {
+  font-size: 1.4em;
+  font-weight: 500;
 }
 
-.brush-stroke-sub-sub{
-    position: absolute;
+.brush-stroke-sub-sub {
+  position: absolute;
   top: -2px;
   left: -16px;
   height: 35px;
   z-index: -1;
 }
 
-.privacy-section{
-    margin-bottom: 60px;
+.privacy-section {
+  margin-bottom: 60px;
 }
 
-.privacy-section .head-container{
-    margin-bottom: 20px;
+.privacy-section .head-container {
+  margin-bottom: 20px;
 }
 
-.privacy-intro{
-    font-size: 1em;
-    font-weight: 300;
-    line-height: 25px;
-    margin-bottom: 15px;
+.privacy-intro {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 25px;
+  margin-bottom: 15px;
 }
 
-.privacy-button{
-    font-size: 1em;
-    font-weight: 300;
-    /* color: var(--accent); */
-    text-decoration: underline;
-    cursor: pointer;
+.privacy-button {
+  font-size: 1em;
+  font-weight: 300;
+  /* color: var(--accent); */
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.privacy-button:hover{
-    color:var(--accent);
+.privacy-button:hover {
+  color: var(--accent);
 }
 
 /* .filler {
-    width: 100%;
-    height: 200px;
-    border: 1px solid darkgrey;
-    border-radius: 10px;
-    background-color: rgb(237, 237, 237);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  } */
+      width: 100%;
+      height: 200px;
+      border: 1px solid darkgrey;
+      border-radius: 10px;
+      background-color: rgb(237, 237, 237);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    } */
 
 /* .recent-events { */
 /* border: 1px solid red; */
@@ -525,8 +525,8 @@ textarea {
 }
 
 /* .values .section-container {
-  flex-direction: row-reverse;
-} */
+    flex-direction: row-reverse;
+  } */
 
 .values .head-container {
   margin-bottom: 30px;
@@ -537,30 +537,30 @@ textarea {
 }
 
 /* .section-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-} */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  } */
 
 /* .section-content {
-  width: 60%;
-} */
+    width: 60%;
+  } */
 
 /* .section-content p {
-  font-size: 1.3em;
-  font-weight: 300;
-  line-height: 30px;
-} */
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 30px;
+  } */
 
 /* .section-image { */
 /* border: 1px solid orange; */
 /* height: 200px;
-  width: 200px;
-  padding: 20px;
-  border: 1px solid lightgray;
-  border-radius: 10px;
-} */
+    width: 200px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+  } */
 
 /* .vision-image { */
 /* height: 200px; */
@@ -833,30 +833,30 @@ textarea {
     width: 70%;
   }
   /* 
-  .vision .head-container {
-    margin-bottom: 20px;
-  }
-
-  .values .head-container {
-    margin-bottom: 30px;
-  }
-
-  .team .head-container {
-    margin-bottom: 20px;
-  }
-
-  .section-image {
-    width: 160px;
-    height: 160px;
-  }
-
-  .section-content {
-    width: 68%;
-  }
-
-  .secton-content p {
-    font-size: 1.1em;
-  } */
+    .vision .head-container {
+      margin-bottom: 20px;
+    }
+  
+    .values .head-container {
+      margin-bottom: 30px;
+    }
+  
+    .team .head-container {
+      margin-bottom: 20px;
+    }
+  
+    .section-image {
+      width: 160px;
+      height: 160px;
+    }
+  
+    .section-content {
+      width: 68%;
+    }
+  
+    .secton-content p {
+      font-size: 1.1em;
+    } */
 }
 
 @media screen and (max-width: 850px) {
@@ -883,8 +883,8 @@ textarea {
   }
 
   /* #title-drop-2 {
-      display: block;
-    } */
+        display: block;
+      } */
 
   .hero-content-container {
     top: 18%;
@@ -942,17 +942,17 @@ textarea {
 
 @media screen and (max-width: 800px) {
   /* .section-container,
-  .values .section-container {
-    flex-direction: column;
-  }
-  .section-content {
-    width: 100%;
-  }
-  .vision,
-  .values {
-    /* border: 1px solid red; */
-    /* margin-bottom: 40px; */
-  /* } */ */
+    .values .section-container {
+      flex-direction: column;
+    }
+    .section-content {
+      width: 100%;
+    }
+    .vision,
+    .values {
+      /* border: 1px solid red; */
+  /* margin-bottom: 40px; */
+  /* } */
 }
 @media screen and (max-width: 710px) {
   .nav-items ul {
@@ -998,11 +998,11 @@ textarea {
     /* display: block; */
   }
 
-  .flex-container{
-      display: none;
+  .flex-container {
+    display: none;
   }
-  .message-form{
-      width: 100%;
+  .message-form {
+    width: 100%;
   }
 }
 
@@ -1047,32 +1047,35 @@ textarea {
     left: -15px;
   }
 
-  .input-labels{
-      font-size: 1.1em;
+  .input-labels {
+    font-size: 1.1em;
   }
 
-  #name{
-      width: calc(100% - 16px);
+  #name {
+    width: calc(100% - 16px);
   }
-  #name, #email, #message-input{
-      font-size: 1em;
-  }
-
-  .submit-button{
-      font-size: 1em;
+  #name,
+  #email,
+  #message-input {
+    font-size: 1em;
   }
 
-  .privacy-section .sub-sub-text{
-      font-size: 1.2em;
+  .submit-button {
+    font-size: 1em;
   }
 
-  .brush-stroke-sub-sub{
-      height: 30px;
-      left: -14px;
+  .privacy-section .sub-sub-text {
+    font-size: 1.2em;
   }
 
-  .privacy-intro, .privacy-button{
-      font-size: 0.9em;
+  .brush-stroke-sub-sub {
+    height: 30px;
+    left: -14px;
+  }
+
+  .privacy-intro,
+  .privacy-button {
+    font-size: 0.9em;
   }
 }
 
