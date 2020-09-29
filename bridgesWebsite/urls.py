@@ -26,6 +26,6 @@ urlpatterns = [
     path('', home.views.homepage, name='home'),
     path('articles/', articles.views.articles_page, name='articles-page'),
     path('about/', include('about.urls')),
-    path('contact/', contact.views.contact_page, name='contact-page'),
+    path('contact/', contact.views.contactpage, name='contact-page'),
     path('get-in-touch/', linktree.views.linktree_page, name='linktree')
 ]
