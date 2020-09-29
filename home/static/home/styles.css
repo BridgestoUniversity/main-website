@@ -357,6 +357,7 @@ body {
   font-size: 1.1em;
   font-weight: 300;
   margin-bottom: 10px;
+  line-height: 25px;
 }
 
 .footer-item {
@@ -632,7 +633,7 @@ body {
   }
 
   .hero-content-container {
-    top: 10%;
+    top: 15%;
     position: relative;
     padding-top: 50px;
     margin-bottom: 100px;
@@ -656,6 +657,10 @@ body {
     display: none;
   }
 
+  .hero-text {
+    font-size: 2.2em;
+  }
+
   .bars-container {
     display: block;
   }
@@ -667,6 +672,24 @@ body {
   .footer-container {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+
+  .footer-item {
+    line-height: 25px;
+  }
+
+  .footer-slogan {
+    text-align: center;
+  }
+
+  .footer-slogan span {
+    display: inline-block;
+  }
+
+  .footer-content ul {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .footer-content {
@@ -687,9 +710,23 @@ body {
     font-size: 2em;
   }
 
+  .hero-para {
+    font-size: 1.1em;
+  }
+
+  .sub-text {
+    font-size: 1.8em;
+  }
+
   .brush-stroke {
     height: 35px;
     top: 5px;
+    left: -15px;
+  }
+
+  .brush-stroke-sub {
+    height: 35px;
+    top: 1px;
     left: -15px;
   }
 }
