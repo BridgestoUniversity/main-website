@@ -89,6 +89,15 @@ body {
   padding: 5px 15px;
 }
 
+.nav-item:hover {
+    color: var(--accent);
+}
+
+.nav-items ul li:last-of-type .nav-item:hover{
+    color: black;
+    background-color: var(--hover);
+}
+
 /* .nav-items li:nth-of-type(3) a {
   font-weight: 400;
   /* letter-spacing: 0.5px; */
