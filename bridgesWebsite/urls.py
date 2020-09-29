@@ -24,7 +24,8 @@ import linktree.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home.views.homepage, name='home'),
-    path('articles/', articles.views.articles_page, name='articles-page'),
+    # path('articles/', articles.views.articles_page, name='articles-page'),
+    path('articles/', include('articles.urls')),
     path('about/', include('about.urls')),
     path('contact/', contact.views.contactpage, name='contact-page'),
     path('linktree/', linktree.views.linktree_page, name='linktree')
