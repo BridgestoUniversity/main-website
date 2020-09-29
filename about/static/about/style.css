@@ -843,6 +843,10 @@ body {
     font-size: 1.8em;
   }
 
+  .main-button {
+    font-size: 1em;
+  }
+
   .section-content p {
     font-size: 1.1em;
   }

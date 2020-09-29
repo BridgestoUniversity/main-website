@@ -484,6 +484,10 @@ body {
     font-size: 1.9em;
   }
 
+  .main-button {
+    font-size: 1em;
+  }
+
   #title-drop-2 {
     /* display: block; */
   }
