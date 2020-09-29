@@ -5,16 +5,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>Our Team</title>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
       crossorigin="anonymous"
     ></script>
-    <script src="{% static 'about/app.js'%}"></script>
+    <script src="{% static 'ourTeam/app.js'%}"></script>
     <link
       rel="stylesheet"
-      href="{% static 'about/style.css'%}"
+      href="{% static 'ourTeam/style.css'%}"
       type="text/css"
     />
     <link
@@ -56,7 +56,7 @@
     <section class="hero">
       <div class="hero-content-container">
         <div class="head-container">
-          <h2 class="hero-text">Who are we?</h2>
+          <h2 class="hero-text">Meet the Team!</h2>
           <img
             class="brush-stroke"
             src="{% static 'images/brush-effect.png'%}"
@@ -64,128 +64,117 @@
           />
         </div>
         <p class="hero-para">
-          Bridges to University is a free student support initiative designed to
-          help ease the transition from high school to university. We aim to
-          inspire students as they take their first step into their careers by
-          providing a central location for advice or answers to any questions
-          related to post-secondary education, student life and much more!
+          Our team at bridges consists of nine individuals who attend five
+          different universities and are enrolled in nine different programs,
+          located all over the province. If you have any questions, feel free to
+          reach out and contact us! We would love to connect.
         </p>
-        <a href="#" class="main-button accent-button">Get involved!</a>
+        <a href="#" class="main-button accent-button">Get in touch!</a>
       </div>
       <div class="hero-image-container">
         <img
           class="hero-image"
-          src="{% static 'images/about-hero-illustration.svg'%}"
+          src="{% static 'images/team-illustration.svg'%}"
           alt=""
         />
       </div>
     </section>
 
-    <!-- our vision section starts here: -->
-    <section class="vision">
-      <div class="head-container">
-        <h3 class="sub-text">Our Vision</h3>
-        <img
-          class="brush-stroke-sub"
-          src="{% static 'images/brush-effect.png'%}"
-          alt=""
-        />
-      </div>
+    <section class="team-grid">
+      <div class="team-row">
+        <div class="team-card">
+          <div id="chiddhanya-image" class="card-image"></div>
 
-      <div class="section-container">
-        <div class="section-content">
-          <p>
-            At bridges, we aim to help build the next generation of students
-            into strong and confident individuals and lead them into their
-            future. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Accusamus, eaque ad. Perspiciatis, porro dolores neque reiciendis
-            nisi in maxime ad!
-          </p>
+          <div class="card-content">
+            <p class="card-name">Chiddhanya Alagesan</p>
+            <h4 class="card-position">Chief Executive Officer</h4>
+          </div>
         </div>
 
-        <div class="flex-container">
-          <div class="section-image">
-            <img
-              class="vision-image"
-              src="{% static 'images/vision-illustration.svg'%}"
-              alt=""
-            />
+        <div class="team-card">
+          <div id="leesa-image" class="card-image"></div>
+
+          <div class="card-content">
+            <p class="card-name">Leesa Panchal</p>
+            <h4 class="card-position">Chief Executive Officer</h4>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div id="harjot-image" class="card-image"></div>
+
+          <div class="card-content">
+            <p class="card-name">Harjot Suri</p>
+            <h4 class="card-position">Chief Marketing Officer</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-row">
+        <div class="team-card">
+          <div id="vi-image" class="card-image"></div>
+
+          <div class="card-content">
+            <p class="card-name">Vi Vo</p>
+            <h4 class="card-position">Chief Marketing Officer</h4>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div id="hussain-image" class="card-image"></div>
+
+          <div class="card-content">
+            <p class="card-name">Hussain Jan</p>
+            <h4 class="card-position">Chief Editor</h4>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div id="stephanie-image" class="card-image"></div>
+
+          <div class="card-content">
+            <p class="card-name">Stephanie Huynh</p>
+            <h4 class="card-position">Chief Editor</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-row">
+        <div class="team-card">
+          <div id="avi-image" class="card-image"></div>
+
+          <div class="card-content">
+            <p class="card-name">Avi Patel</p>
+            <h4 class="card-position">Chief Technology Officer</h4>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div id="andrick-image" class="card-image"></div>
+
+          <div class="card-content">
+            <p class="card-name">Andrick Punit</p>
+            <h4 class="card-position">Head of Frontend Development</h4>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div id="varun-image" class="card-image"></div>
+
+          <div class="card-content">
+            <p class="card-name">Varun Garg</p>
+            <h4 class="card-position">Head of Backend Development</h4>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- our values section starts here:  -->
-    <section class="values">
-      <div class="head-container">
-        <h3 class="sub-text">Our Values</h3>
-        <img
-          class="brush-stroke-sub"
-          src="{% static 'images/brush-effect.png'%}"
-          alt=""
-        />
-      </div>
-
-      <div class="section-container">
-        <div class="section-content">
-          <p>
-            At bridges, we hold a of key values close to our hearts. These
-            include positivity, genuinity, the pursuit of knowledge, honesty and
-            integrity, as well as accountability and trustworthiness. Lorem,
-            ipsum dolor sit amet consectetur adipisicing elit. Nisi, magnam!
-          </p>
-        </div>
-
-        <div class="flex-container">
-          <div class="section-image">
-            <img
-              class="vision-image"
-              src="{% static 'images/values-illustration.svg'%}"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- our team section starts here:  -->
-    <section class="team">
-      <div class="head-container">
-        <h3 class="sub-text">Our Team</h3>
-        <img
-          class="brush-stroke-sub"
-          src="{% static 'images/brush-effect.png'%}"
-          alt=""
-        />
-      </div>
-
-      <div class="section-container">
-        <div class="section-content">
-          <p>
-            Our team at bridges consists of nine individuals who attend five
-            different universities and are enrolled in nine different programs,
-            located all over the province.
-          </p>
-
-          <a href="#" class="section-button accent-button">Meet the team!</a>
-        </div>
-
-        <div class="flex-container">
-          <div class="section-image">
-            <img
-              class="vision-image"
-              src="{% static 'images/team-illustration.svg'%}"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- footer section starts here: -->
     <footer class="footer-container">
       <div class="footer-content">
         <p class="footer-slogan">
-          Bridges to Success. Bridges to Connections. Bridges to University.
+          <span>Bridges to Success.</span> <span>Bridges to Connections.</span>
+          <span>Bridges to University.</span>
         </p>
         <ul>
           <li><a href="#" class="footer-item">Home</a></li>

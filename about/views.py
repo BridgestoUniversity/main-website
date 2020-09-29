@@ -7,7 +7,7 @@ def about_page(request):
 
 
 def our_team(request):
-    return HttpResponse("This is the Bridges Team Intro Page")
+    return render(request, 'ourTeam/index.html')
 
 
 def get_involved(request):

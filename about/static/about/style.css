@@ -796,6 +796,22 @@ body {
   }
 }
 
+@media screen and (max-width: 450px) {
+  body {
+    padding: 0 30px;
+  }
+
+  .hero-text {
+    font-size: 2em;
+  }
+
+  .brush-stroke {
+    height: 35px;
+    top: 5px;
+    left: -15px;
+  }
+}
+
 /* ANIMATION KEY FRAMES  */
 
 @keyframes fade-in {
