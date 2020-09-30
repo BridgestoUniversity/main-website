@@ -13,20 +13,21 @@ def articles_page(request):
 
     reqMethod = request.method
 
-    if reqMethod == 'POST':
-        orderType = request.POST.get('orderType', '')
-        searchInput = request.POST.get('searchInput', '')
+    if reqMethod == 'GET':
+        orderType = request.GET.get('orderType', '')
+        searchInput = request.GET.get('searchInput', '')
 
         # make conditions based on resetValue == 'reset'
-        submitValue = request.POST.get('search', '')
-        resetValue = request.POST.get('reset', '')
+        submitValue = request.GET.get('search', '')
+        resetValue = request.GET.get('reset', '')
         debugStr = "SubmitVal: " + submitValue + ". Reset Value: " + \
-            resetValue + ". OrderType: " + orderType + "."
+            resetValue + ". OrderType: " + orderType + \
+            ". Search String:" + searchInput + "."
 
         if (resetValue == 'reset'):
             filteredIssues = issues.order_by('-date')
             # filteredIssues.order_by('date')
-        else:
+        elif (submitValue == 'search'):
             filteredIssues = issues.filter(
                 Q(title__icontains=searchInput) | Q(authors__icontains=searchInput) | Q(topics__icontains=searchInput) | Q(tags__icontains=searchInput) | Q(articleType__icontains=searchInput))
 
@@ -38,12 +39,15 @@ def articles_page(request):
                 filteredIssues = filteredIssues.order_by('date')
 
                 # filteredIssues.order_by('date')
+        else:
+            issues = issues.order_by('-date')
+            filteredIssues = issues
 
         return render(request, 'articles/index.html', {"issues": filteredIssues, "latestIssue": latestIssue, "reqMethod": reqMethod, "debugString": debugStr})
-    else:
-        issues = issues.order_by('-date')
-        latestIssue = issues.first()
-        return render(request, 'articles/index.html', {"issues": issues, "latestIssue": latestIssue, "reqMethod": reqMethod, "debugString": "nothing"})
+    # else:
+    #     issues = issues.order_by('-date')
+    #     latestIssue = issues.first()
+    #     return render(request, 'articles/index.html', {"issues": issues, "latestIssue": latestIssue, "reqMethod": reqMethod, "debugString": "nothing"})
 
 
 def articles_testing(request, id):

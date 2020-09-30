@@ -14,7 +14,7 @@
     <script src="{% static 'articles/app.js'%}"></script>
     <link
       rel="stylesheet"
-      href="{% static 'articles/styles.css'%}"
+      href="{% static 'articles/style.css'%}"
       type="text/css"
     />
     <link
@@ -66,8 +66,7 @@
             alt=""
           />
         </div>
-        <form class="search-bar" method="POST" action=".">
-          {% csrf_token %}
+        <form class="search-bar" method="GET" action=".">
           <select name="orderType" id="orderType">
             <option value="0">Newest</option>
             <option value="1">Oldest</option>
@@ -78,14 +77,22 @@
             type="text"
             placeholder="Search Articles"
           />
-          <input
+          <button
+            class="search-button"
+            type="submit"
+            name="search"
+            value="search"
+          >
+            <img src="{% static 'images/search-button.svg'%}" alt="Search" />
+          </button>
+          <!-- <input
             class="search-button"
             type="image"
             src="{% static 'images/search-button.svg'%}"
             name="search"
             value="search"
             alt="submit"
-          />
+          /> -->
           <input
             class="reset-button"
             type="submit"

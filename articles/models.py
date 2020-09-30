@@ -23,8 +23,15 @@ class Articles(models.Model):
     authors = models.CharField(
         max_length=100, default='Authors have not been set')
     # link
-    link = models.CharField(max_length=200, default='Link has not been set')
-    # todo: set default to an article not found page, or redirect back to articles
+    documentLink = models.CharField(
+        max_length=200, default='Document link has not been set')
 
-    def __str__(self):
-        return self.title
+    image1Link = models.CharField(
+        max_length=200, default="Image link 1 has not been set")
+
+    image2Link = models.CharField(
+        max_length=200, default="Image link 2 has not been set")
+
+
+def __str__(self):
+    return self.title

@@ -578,6 +578,8 @@ body {
 .search-bar {
   /* border: 1px solid red; */
   display: flex;
+  /* height: 50px; */
+  flex-direction: row;
   align-items: center;
   /* flex-wrap: wrap; */
 }
@@ -589,8 +591,14 @@ body {
   /* margin: 10px; */
   margin-right: 8px;
   cursor: pointer;
+  outline: none;
+  /* border: 1px solid red; */
   /* border: none; */
   /* border: 1px solid lightgray; */
+}
+
+#orderType:active {
+  outline: none;
 }
 
 .searchInput {
@@ -609,6 +617,9 @@ body {
   width: 20px;
   min-width: 20px;
   margin-right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .search-button:hover path {
