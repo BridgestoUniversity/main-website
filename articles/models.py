@@ -22,13 +22,15 @@ class Articles(models.Model):
     # author(s)
     authors = models.CharField(
         max_length=100, default='Authors have not been set')
+    # link-type
+    linkType = models.CharField(max_length=20, default='A')
     # link
     documentLink = models.CharField(
         max_length=200, default='Document link has not been set')
-
+    # image 1 link
     image1Link = models.CharField(
         max_length=200, default="Image link 1 has not been set")
-
+    # image 2 link
     image2Link = models.CharField(
         max_length=200, default="Image link 2 has not been set")
 

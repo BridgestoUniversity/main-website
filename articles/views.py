@@ -43,7 +43,7 @@ def articles_page(request):
             issues = issues.order_by('-date')
             filteredIssues = issues
 
-        return render(request, 'articles/index.html', {"issues": filteredIssues, "latestIssue": latestIssue, "reqMethod": reqMethod, "debugString": debugStr})
+        return render(request, 'articles/index.html', {"issues": filteredIssues, "latestIssue": latestIssue,  "debugString": debugStr})
     # else:
     #     issues = issues.order_by('-date')
     #     latestIssue = issues.first()
