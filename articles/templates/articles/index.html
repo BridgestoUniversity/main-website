@@ -1,11 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Articles</title>
-  </head>
-  <body>
-    Hello!
-  </body>
-</html>
+{% extends 'articles/base.html' %} {% load static %}
+
+<div class="issues-container">
+  <!-- open block -->
+  {% block allIssues %}
+  <!-- create for loop -->
+  {% for item in issues.all %}
+  <!-- for loop contents -->
+  <div class="issue-card">
+    <div class="issue-content">
+      <div class="issue-head">
+        <h4 class="issue-title">{{item.title}}</h4>
+        <p class="issue-date">{{item.date}}</p>
+      </div>
+      <div class="issue-info">
+        <p class="info-para">
+          <span class="issue-topic">{{item.topics}}</span>
+          <span class="issue-type">{{item.articleType}}</span>
+          <span class="issue-authors">by {{item.authors}}</span>
+        </p>
+      </div>
+      <div class="issue-summary-container">
+        <p class="issue-summary">{{item.summary}}</p>
+      </div>
+      <div class="issue-links">
+        <a
+          class="issue-read-more"
+          target="_blank"
+          href=""
+          class="issue-read-more"
+          >Read more</a
+        >
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="issue-image-container">
+        <img
+          class="issue-image"
+          src="{% static 'images/covers/newsletter-6-cover-2.png' %}"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+  <!-- end for loop -->
+  {% endfor %}
+  <!-- end block -->
+  {% endblock %}
+</div>
+
+<div>
+  {% block hero %}
+  <div class="hero-content-container">
+    <p class="hero-small-text">Latest Issue:</p>
+    <div class="head-container">
+      <h2 class="hero-text">Who are we?</h2>
+      <img
+        class="brush-stroke"
+        src="{% static 'images/brush-effect.png'%}"
+        alt=""
+      />
+    </div>
+    <p class="hero-para">
+      Bridges to University is a free student support initiative designed to
+      help ease the transition from high school to university. We aim to inspire
+      students as they take their first step into their careers by providing a
+      central location for advice or answers to any questions related to
+      post-secondary education, student life and much more!
+    </p>
+    <a href="#" class="main-button accent-button">View more!</a>
+  </div>
+  <div class="hero-image-container">
+    <img
+      class="hero-image"
+      src="{% static 'images/covers/newsletter-6-cover-1.png'%}"
+      alt=""
+    />
+  </div>
+  {% endblock %}
+</div>

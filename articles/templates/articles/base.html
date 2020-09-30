@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="{% static 'articles/app.js'%}"></script>
+    <link
+      rel="stylesheet"
+      href="{% static 'articles/styles.css'%}"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav section starts here: -->
+    <nav class="nav-container">
+      <div class="nav-logo">
+        <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
+        <h1 class="logo-text">Bridges</h1>
+      </div>
+      <div class="nav-items">
+        <ul>
+          <li><a href="#" class="nav-item">Home</a></li>
+          <li><a href="#" class="nav-item">Articles</a></li>
+          <li><a href="#" class="nav-item">About</a></li>
+          <li class="last-item"><a href="#" class="nav-item">Contact</a></li>
+        </ul>
+        <div class="bars-container">
+          <span class="top-bar bar"></span>
+          <span class="middle-bar bar"></span>
+          <span class="bottom-bar bar"></span>
+        </div>
+      </div>
+      <!-- The Nav Items when they are expanded from their collapsed form -->
+      <div class="nav-items-collapse">
+        <ul>
+          <li><a href="#" class="nav-item">Home</a></li>
+          <li><a href="#" class="nav-item">Articles</a></li>
+          <li><a href="#" class="nav-item">About</a></li>
+          <li><a href="#" class="nav-item">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">{% block hero %} {% endblock%}</section>
+
+    <!-- issues section starts here -->
+    <section class="issues-container">
+      <div class="issues-sub-container">
+        <div class="head-container">
+          <h3 class="sub-text">All Issues</h3>
+          <img
+            class="brush-stroke-sub"
+            src="{% static 'images/brush-effect.png'%}"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="issues-grid">{% block allIssues%} Testing {% endblock%}</div>
+    </section>
+
+    <!-- footer section starts here: -->
+    <footer class="footer-container">
+      <div class="footer-content">
+        <p class="footer-slogan">
+          <span>Bridges to Success.</span> <span>Bridges to Connections.</span>
+          <span>Bridges to University.</span>
+        </p>
+        <ul>
+          <li><a href="#" class="footer-item">Home</a></li>
+          <li><a href="#" class="footer-item">Articles</a></li>
+          <li><a href="#" class="footer-item">About</a></li>
+          <li><a href="#" class="footer-item">Contact</a></li>
+          <li><a href="#" class="footer-item">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
+        <p class="copyright-text">Bridges © 2020</p>
+      </div>
+      <div class="footer-links">
+        <!-- Add LinkedIn Link Vector Here -->
+        <a class="footer-link linkedin-link"
+          ><img class="" src="{% static 'images/linkedin.svg'%}" alt="" />
+        </a>
+        <a class="footer-link youtube-link"
+          ><img class="" src="{% static 'images/youtube.svg'%}" alt=""
+        /></a>
+        <a class="footer-link instagram-link"
+          ><img class="" src="{% static 'images/instagram.svg'%}" alt="" />
+        </a>
+        <!-- Add YouTube Link Vector Here -->
+        <!-- Add Instagram Link Vector Here -->
+      </div>
+    </footer>
+  </body>
+</html>

@@ -5,7 +5,8 @@ from .models import Articles
 
 def articles_page(request):
     # return HttpResponse("This is the Bridges Article Page")
-    return render(request, 'articles/index.html')
+    issues = Articles.objects
+    return render(request, 'articles/index.html', {"issues": issues})
 
 
 def articles_testing(request, id):
