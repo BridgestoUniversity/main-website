@@ -97,7 +97,7 @@
       </div>
 
       <div class="section-container">
-        <form class="message-form" method="POST" action="">{% csrf_token %}
+        <form class="message-form" method="POST" action="{% url 'contact-page' %}">{% csrf_token %}
           <label class="input-labels" for="name">Name</label>
           <input
             type="text"

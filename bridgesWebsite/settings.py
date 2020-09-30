@@ -128,5 +128,5 @@ STATIC_URL = '/static/'
 # Setting STATICFILES_DIRS to access the outmost static folder enables the use of specific static files throughout all apps
 # Will most commonly be used for getting access to our images
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")
+    os.path.join(BASE_DIR, 'static')
 ]

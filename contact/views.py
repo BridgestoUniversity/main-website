@@ -8,5 +8,4 @@ from django.shortcuts import render, HttpResponse
 # return render(request, 'contact/bob.html')
 
 def contactpage(request):
-        # return HttpResponse("This is the Bridges Homepage")
     return render(request, 'contact/index.html')
