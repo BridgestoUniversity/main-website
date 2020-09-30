@@ -1,12 +1,49 @@
 from django.shortcuts import render, HttpResponse
-
+from django.db.models import Q
 from .models import Articles
 
 
 def articles_page(request):
     # return HttpResponse("This is the Bridges Article Page")
+    # by default, issues will be organized in descending order in terms of date
+
     issues = Articles.objects
-    return render(request, 'articles/index.html', {"issues": issues})
+    newestIssuesOrder = issues.order_by('-date')
+    latestIssue = newestIssuesOrder.first()
+
+    reqMethod = request.method
+
+    if reqMethod == 'POST':
+        orderType = request.POST.get('orderType', '')
+        searchInput = request.POST.get('searchInput', '')
+
+        # make conditions based on resetValue == 'reset'
+        submitValue = request.POST.get('search', '')
+        resetValue = request.POST.get('reset', '')
+        debugStr = "SubmitVal: " + submitValue + ". Reset Value: " + \
+            resetValue + ". OrderType: " + orderType + "."
+
+        if (resetValue == 'reset'):
+            filteredIssues = issues.order_by('-date')
+            # filteredIssues.order_by('date')
+        else:
+            filteredIssues = issues.filter(
+                Q(title__icontains=searchInput) | Q(authors__icontains=searchInput) | Q(topics__icontains=searchInput) | Q(tags__icontains=searchInput) | Q(articleType__icontains=searchInput))
+
+            if (orderType == '0'):
+                filteredIssues = filteredIssues.order_by('-date')
+                # print('hello')
+            else:
+                # bob = "name"
+                filteredIssues = filteredIssues.order_by('date')
+
+                # filteredIssues.order_by('date')
+
+        return render(request, 'articles/index.html', {"issues": filteredIssues, "latestIssue": latestIssue, "reqMethod": reqMethod, "debugString": debugStr})
+    else:
+        issues = issues.order_by('-date')
+        latestIssue = issues.first()
+        return render(request, 'articles/index.html', {"issues": issues, "latestIssue": latestIssue, "reqMethod": reqMethod, "debugString": "nothing"})
 
 
 def articles_testing(request, id):

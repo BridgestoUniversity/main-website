@@ -66,10 +66,39 @@
             alt=""
           />
         </div>
+        <form class="search-bar" method="POST" action=".">
+          {% csrf_token %}
+          <select name="orderType" id="orderType">
+            <option value="0">Newest</option>
+            <option value="1">Oldest</option>
+          </select>
+          <input
+            class="searchInput"
+            name="searchInput"
+            type="text"
+            placeholder="Search Articles"
+          />
+          <input
+            class="search-button"
+            type="image"
+            src="{% static 'images/search-button.svg'%}"
+            name="search"
+            value="search"
+            alt="submit"
+          />
+          <input
+            class="reset-button"
+            type="submit"
+            name="reset"
+            value="reset"
+          />
+        </form>
       </div>
 
       <div class="issues-grid">{% block allIssues%} Testing {% endblock%}</div>
     </section>
+
+    <div class="debugging">{% block debugging%} {% endblock %}</div>
 
     <!-- footer section starts here: -->
     <footer class="footer-container">

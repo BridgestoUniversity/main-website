@@ -14,7 +14,7 @@
       </div>
       <div class="issue-info">
         <p class="info-para">
-          <span class="issue-topic">{{item.topics}}</span>
+          <a href="" class="issue-topic">{{item.topics}}</a>
           <span class="issue-type">{{item.articleType}}</span>
           <span class="issue-authors">by {{item.authors}}</span>
         </p>
@@ -46,27 +46,23 @@
   {% endfor %}
   <!-- end block -->
   {% endblock %}
+  <!-- debugging block -->
+  {% block debugging%} {{debugString}} {% endblock %}
 </div>
 
 <div>
   {% block hero %}
   <div class="hero-content-container">
-    <p class="hero-small-text">Latest Issue:</p>
+    <p class="hero-small-text">Latest Issue: {{reqMethod}}</p>
     <div class="head-container">
-      <h2 class="hero-text">Who are we?</h2>
+      <h2 class="hero-text">{{latestIssue.title}}</h2>
       <img
         class="brush-stroke"
         src="{% static 'images/brush-effect.png'%}"
         alt=""
       />
     </div>
-    <p class="hero-para">
-      Bridges to University is a free student support initiative designed to
-      help ease the transition from high school to university. We aim to inspire
-      students as they take their first step into their careers by providing a
-      central location for advice or answers to any questions related to
-      post-secondary education, student life and much more!
-    </p>
+    <p class="hero-para">{{latestIssue.summary}}</p>
     <a href="#" class="main-button accent-button">View more!</a>
   </div>
   <div class="hero-image-container">

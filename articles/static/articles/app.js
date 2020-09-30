@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // console.log("hello!!");
-  //   alert("hello!");
+  // alert("hello!");
 
   // var navButton = $("bars-container");
   $(".bars-container").click(toggleNav);
