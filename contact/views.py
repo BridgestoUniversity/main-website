@@ -8,4 +8,12 @@ from django.shortcuts import render, HttpResponse
 # return render(request, 'contact/bob.html')
 
 def contactpage(request):
-    return render(request, 'contact/index.html')
+    if request.method == "POST":
+        name = request.POST['name']
+        email = request.POST['email']
+        message = request.POST['message']
+
+        return render(request, 'contact/index.html', {'name': name})
+
+    else:
+        return render(request, 'contact/index.html', {})
