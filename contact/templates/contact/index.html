@@ -23,6 +23,9 @@
     />
   </head>
   <body>
+
+    {% include 'contact/messages.html' %}
+
     <!-- nav section starts here: -->
     <nav class="nav-container">
       <div class="nav-logo">
@@ -195,5 +198,14 @@
         <!-- Add Instagram Link Vector Here -->
       </div>
     </footer>
+
+    <script>
+      setTimeout(function() {
+        if ($('#msg').length > 0) {
+          $('#msg').remove();
+        }
+      }, 3000)
+    </script>
+
   </body>
 </html>
