@@ -132,9 +132,9 @@ STATICFILES_DIRS = [
 ]
 
 # Email Settings
-EMAIL_HOST = 'localhost'
-EMAIL_POST = '1025'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = False
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_POST = 587
+EMAIL_HOST_USER = 'bridgestouniversity@gmail.com '
+EMAIL_HOST_PASSWORD = 'pdkcgsfrfcifhbkm'
+EMAIL_USE_TLS = True
 # EMAIL_USE_SSL = False

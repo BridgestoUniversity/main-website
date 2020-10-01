@@ -17,9 +17,10 @@ def contactpage(request):
         # send an email
         send_mail(
             'Message from ' + name, # subject
-            message, # message
+            "Email: " + email + "\nMessage: " + message, # message
             email, # from email
             ['bridgestouniversity@gmail.com'], # to email
+            fail_silently=False
         )
 
         return render(request, 'contact/index.html', {'name': name})
