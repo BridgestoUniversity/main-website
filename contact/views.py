@@ -24,7 +24,7 @@ def contactpage(request):
             # fail_silently=False
         )
 
-        messages.success(request, 'We have received your email!')
+        messages.success(request, 'Thanks ' + name + '! We have received your email, and will respond shortly')
 
         return render(request, 'contact/index.html', {'name': name})
 

@@ -14,7 +14,7 @@
     <script src="{% static 'contact/app.js'%}"></script>
     <link
       rel="stylesheet"
-      href="{% static 'contact/style.css'%}"
+      href="{% static 'contact/styles.css'%}"
       type="text/css"
     />
     <link
@@ -23,7 +23,6 @@
     />
   </head>
   <body>
-    {% include 'contact/messages.html' %}
 
     <!-- nav section starts here: -->
     <nav class="nav-container">
@@ -54,6 +53,8 @@
         </ul>
       </div>
     </nav>
+
+    {% include 'contact/messages.html' %}
 
     <section class="hero">
       <div class="hero-content-container">
@@ -219,7 +220,7 @@
         if ($("#msg").length > 0) {
           $("#msg").remove();
         }
-      }, 3000);
+      }, 5000);
     </script>
   </body>
 </html>
