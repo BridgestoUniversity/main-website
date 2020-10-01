@@ -1,0 +1,57 @@
+{% extends 'home/index.html' %} {% load static %}
+<!-- start recentContent block -->
+{% block recentContent %}
+<div class="">
+  <div class="countdown-section">
+    <!-- countdown -->
+    <!-- countdown description -->
+  </div>
+  <!-- horizontal line to divide sections -->
+  <div class="section-divider"></div>
+  <div class="events-section items-{{events.count}}">
+    {% if events.count == 0 %}
+    <div class="no-events-container">
+      <p>Stay tuned for more upcoming events!</p>
+    </div>
+    {% else %}
+    <!-- for loop to iteratre over events -->
+    {% for event in events.all %}
+    <!-- for loop contents -->
+    <div class="event-card">
+      <div class="card-head">
+        <p>{{ event.title }}</p>
+      </div>
+      <div class="card-image-container">
+        <img
+          class="card-image"
+          src="{% static 'images/eventCovers/'%}{{event.imageLink}}"
+          alt=""
+        />
+      </div>
+      <div class="card-content">
+        <p class="card-date">{{ event.date }}</p>
+        <p class="card-summary">{{ event.summary }}</p>
+        <!-- determine what type of link it is -->
+        {% if event.linkType == 'Coming soon!' %}
+        <!-- keep a paragraph with text: Coming soon! -->
+        <p class="card-link">Coming soon!</p>
+        {% elif event.linkType == 'Read external!' %}
+        <!-- keep an anchor tag with external link and Read more! -->
+        <a target="_blank" href="{{event.link}}" class="card-link">
+          Read more!</a
+        >
+        {% else %}
+        <!-- keep an anchor tag with internal link and Read more! -->
+        <a
+          target="_blank"
+          href="{% static 'documents/'%}{{event.link}}"
+          class="card-link"
+          >Read more!</a
+        >
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %} {% endif %}
+  </div>
+</div>
+{% endblock %}

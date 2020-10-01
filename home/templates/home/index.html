@@ -14,7 +14,7 @@
     <script src="{% static 'home/app.js'%}"></script>
     <link
       rel="stylesheet"
-      href="{% static 'home/styles.css'%}"
+      href="{% static 'home/style.css'%}"
       type="text/css"
     />
     <link
@@ -97,9 +97,15 @@
           alt=""
         />
       </div>
-      <div class="filler">
-        <p>Recent Section Coming Soon</p>
+      <div class="countdown-container">
+        <!-- start recentContent block -->
+        {% block recentContent %}
+        <!-- end recentContent block -->
+        {% endblock %}
       </div>
+      <!-- <div class="filler">
+        <p>Recent Section Coming Soon</p>
+      </div> -->
     </section>
 
     <!-- footer section starts here: -->
@@ -114,7 +120,13 @@
           <li><a href="#" class="footer-item">Articles</a></li>
           <li><a href="#" class="footer-item">About</a></li>
           <li><a href="#" class="footer-item">Contact</a></li>
-          <li><a href="#" class="footer-item">Privacy Policy</a></li>
+          <li>
+            <a
+              href="{% static 'documents/privacy-policy.pdf'%}"
+              class="footer-item"
+              >Privacy Policy</a
+            >
+          </li>
         </ul>
       </div>
       <div class="footer-copyright">

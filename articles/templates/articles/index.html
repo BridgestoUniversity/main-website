@@ -14,7 +14,7 @@
       </div>
       <div class="issue-info">
         <p class="info-para">
-          <a href="" class="issue-topic">{{item.topics}}</a>
+          <span class="issue-topic">{{item.topics}}</span>
           <span class="issue-type">{{item.articleType}}</span>
           <span class="issue-authors">by {{item.authors}}</span>
         </p>
@@ -44,6 +44,12 @@
   </div>
   <!-- end for loop -->
   {% endfor %}
+  <!-- add 'no articles found' block -->
+  {% if issues.count == 0 %}
+  <div class="issue-card">
+    Sorry! We found no articles matching your description.
+  </div>
+  {% endif %}
   <!-- end block -->
   {% endblock %}
   <!-- debugging block -->
