@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
-
+from django.core.mail import send_mail
+from django.contrib import messages
 
 # def contact_page(request):
 # return HttpResponse("This is the Bridges Contact Page")
@@ -7,6 +8,25 @@ from django.shortcuts import render, HttpResponse
 # return render(request, 'contact.html', context)
 # return render(request, 'contact/bob.html')
 
+
 def contactpage(request):
-        # return HttpResponse("This is the Bridges Homepage")
-    return render(request, 'contact/index.html')
+    if request.method == "POST":
+        name = request.POST['name']
+        email = request.POST['email']
+        message = request.POST['message']
+
+        # send an email
+        send_mail(
+            'Message from ' + name,  # subject
+            "Email: " + email + "\nMessage: " + message,  # message
+            email,  # from email
+            ['bridgestouniversity@gmail.com'],  # to email
+            # fail_silently=False
+        )
+
+        messages.success(request, 'Thanks ' + name + '! We have received your email, and will respond shortly')
+
+        return render(request, 'contact/index.html', {'name': name})
+
+    else:
+        return render(request, 'contact/index.html', {})
