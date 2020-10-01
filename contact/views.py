@@ -8,6 +8,7 @@ from django.contrib import messages
 # return render(request, 'contact.html', context)
 # return render(request, 'contact/bob.html')
 
+
 def contactpage(request):
     if request.method == "POST":
         name = request.POST['name']
@@ -16,11 +17,11 @@ def contactpage(request):
 
         # send an email
         send_mail(
-            'Message from ' + name, # subject
-            "Email: " + email + "\nMessage: " + message, # message
-            email, # from email
-            ['bridgestouniversity@gmail.com'], # to email
-            fail_silently=False
+            'Message from ' + name,  # subject
+            "Email: " + email + "\nMessage: " + message,  # message
+            email,  # from email
+            ['bridgestouniversity@gmail.com'],  # to email
+            # fail_silently=False
         )
 
         messages.success(request, 'We have received your email!')
