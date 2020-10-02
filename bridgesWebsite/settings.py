@@ -124,6 +124,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+
 # Note that BASE_DIR is the directory where manage.py lies
 # Setting STATICFILES_DIRS to access the outmost static folder enables the use of specific static files throughout all apps
 # Will most commonly be used for getting access to our images
