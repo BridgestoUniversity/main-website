@@ -31,10 +31,12 @@
       </div>
       <div class="nav-items">
         <ul>
-          <li><a href="#" class="nav-item">Home</a></li>
-          <li><a href="#" class="nav-item">Articles</a></li>
-          <li><a href="#" class="nav-item">About</a></li>
-          <li class="last-item"><a href="#" class="nav-item">Contact</a></li>
+          <li><a href="/" class="nav-item">Home</a></li>
+          <li><a href="/articles/" class="nav-item">Articles</a></li>
+          <li><a href="/about/" class="nav-item">About</a></li>
+          <li class="last-item">
+            <a href="/contact/" class="nav-item">Contact</a>
+          </li>
         </ul>
         <div class="bars-container">
           <span class="top-bar bar"></span>
@@ -45,10 +47,10 @@
       <!-- The Nav Items when they are expanded from their collapsed form -->
       <div class="nav-items-collapse">
         <ul>
-          <li><a href="#" class="nav-item">Home</a></li>
-          <li><a href="#" class="nav-item">Articles</a></li>
-          <li><a href="#" class="nav-item">About</a></li>
-          <li><a href="#" class="nav-item">Contact</a></li>
+          <li><a href="/" class="nav-item">Home</a></li>
+          <li><a href="/articles/" class="nav-item">Articles</a></li>
+          <li><a href="/about/" class="nav-item">About</a></li>
+          <li><a href="/contact/" class="nav-item">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -115,12 +117,13 @@
           <span>Bridges to University.</span>
         </p>
         <ul>
-          <li><a href="#" class="footer-item">Home</a></li>
-          <li><a href="#" class="footer-item">Articles</a></li>
-          <li><a href="#" class="footer-item">About</a></li>
-          <li><a href="#" class="footer-item">Contact</a></li>
+          <li><a href="/" class="footer-item">Home</a></li>
+          <li><a href="/articles/" class="footer-item">Articles</a></li>
+          <li><a href="/about/" class="footer-item">About</a></li>
+          <li><a href="/contact/" class="footer-item">Contact</a></li>
           <li>
             <a
+              target="_blank"
               href="{% static 'documents/privacy-policy.pdf'%}"
               class="footer-item"
               >Privacy Policy</a
@@ -134,13 +137,22 @@
       </div>
       <div class="footer-links">
         <!-- Add LinkedIn Link Vector Here -->
-        <a class="footer-link linkedin-link"
+        <a
+          class="footer-link linkedin-link"
+          target="-blank"
+          href="https://www.linkedin.com/company/54086203/"
           ><img class="" src="{% static 'images/linkedin.svg'%}" alt="" />
         </a>
-        <a class="footer-link youtube-link"
+        <a
+          class="footer-link youtube-link"
+          target="-blank"
+          href="https://www.youtube.com/channel/UCuYtMcz5KsBxxClplacyVwA"
           ><img class="" src="{% static 'images/youtube.svg'%}" alt=""
         /></a>
-        <a class="footer-link instagram-link"
+        <a
+          class="footer-link instagram-link"
+          target="-blank"
+          href="https://www.instagram.com/bridgestouni/"
           ><img class="" src="{% static 'images/instagram.svg'%}" alt="" />
         </a>
         <!-- Add YouTube Link Vector Here -->

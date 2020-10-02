@@ -90,7 +90,7 @@ body {
   padding: 5px 15px;
 }
 
-.nav-item:hover {
+.nav-items .nav-item:hover {
   color: var(--accent);
 }
 
