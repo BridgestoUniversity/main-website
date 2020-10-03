@@ -522,7 +522,7 @@ body {
 }
 
 #stephanie-image {
-  background-image: url("/static/images/portraits/stephanie-min.JPG");
+  background-image: url("/static/images/portraits/stephanie-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 55% 50%;
