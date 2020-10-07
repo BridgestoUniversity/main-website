@@ -27,8 +27,8 @@ SECRET_KEY = 'eeue+z7(i#w(4y_%*os#pnnkw&4vk*gu!#h0co-8ic0j+egn-h'
 DEBUG = True
 
 
-# ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bridgestouni.herokuapp.com', 'bridgestouni.com']
+# ALLOWED_HOSTS = []
 
 
 # Application definition
