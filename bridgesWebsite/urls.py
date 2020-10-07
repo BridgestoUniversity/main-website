@@ -15,6 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.static import serve
+from django.conf.urls import url
+from . import settings
 import home.views
 import articles.views
 import about.views
@@ -22,6 +25,8 @@ import contact.views
 import linktree.views
 
 urlpatterns = [
+    url(r'^static/(?P<path>.*)$', serve,
+        {'document_root': settings.STATIC_ROOT}),
     path('admin/', admin.site.urls),
     path('', home.views.homepage, name='home'),
     # path('articles/', articles.views.articles_page, name='articles-page'),
