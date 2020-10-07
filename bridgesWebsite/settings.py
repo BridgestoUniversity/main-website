@@ -23,10 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'eeue+z7(i#w(4y_%*os#pnnkw&4vk*gu!#h0co-8ic0j+egn-h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+#DEBUG = True
 
-# ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -74,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'bridgesWebsite.wsgi.application'
+WSGI_APPLICATION = 'bridgesWebsite.wsgi.application'
 
 
 # Database
