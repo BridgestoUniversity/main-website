@@ -14,7 +14,7 @@
     <script src="{% static 'linktree/app.js'%}"></script>
     <link
       rel="stylesheet"
-      href="{% static 'linktree/linktreeStyle.css'%}"
+      href="{% static 'linktree/linktreeStyles.css'%}"
       type="text/css"
     />
     <link
@@ -34,7 +34,9 @@
           <li><a href="/" class="nav-item">Home</a></li>
           <li><a href="/articles/" class="nav-item">Articles</a></li>
           <li><a href="/about/" class="nav-item">About</a></li>
-          <li class="last-item"><a href="/contact/" class="nav-item">Contact</a></li>
+          <li class="last-item">
+            <a href="/contact/" class="nav-item">Contact</a>
+          </li>
         </ul>
         <div class="bars-container">
           <span class="top-bar bar"></span>
@@ -72,8 +74,22 @@
           </p>
 
           <ul class="hero-links">
-            <li><a class="hero-link-item"target = "-blank" href="https://www.instagram.com/bridgestouni/">Instagram</a></li>
-            <li><a class="hero-link-item"target = "-blank" href="https://www.linkedin.com/company/54086203/">LinkedIn</a></li>
+            <li>
+              <a
+                class="hero-link-item"
+                target="-blank"
+                href="https://www.instagram.com/bridgestouni/"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                class="hero-link-item"
+                target="-blank"
+                href="https://www.linkedin.com/company/54086203/"
+                >LinkedIn</a
+              >
+            </li>
             <li><a class="hero-link-item">Email</a></li>
           </ul>
         </div>
@@ -114,13 +130,22 @@
         </div>
         <div class="footer-links">
           <!-- Add LinkedIn Link Vector Here -->
-          <a class="footer-link linkedin-link"target = "-blank" href="https://www.linkedin.com/company/54086203/"
+          <a
+            class="footer-link linkedin-link"
+            target="-blank"
+            href="https://www.linkedin.com/company/54086203/"
             ><img class="" src="{% static 'images/linkedin.svg'%}" alt="" />
           </a>
-          <a class="footer-link youtube-link"target = "-blank" href="https://www.youtube.com/channel/UCuYtMcz5KsBxxClplacyVwA" 
+          <a
+            class="footer-link youtube-link"
+            target="-blank"
+            href="https://www.youtube.com/channel/UCuYtMcz5KsBxxClplacyVwA"
             ><img class="" src="{% static 'images/youtube.svg'%}" alt=""
           /></a>
-          <a class="footer-link instagram-link"target = "-blank" href="https://www.instagram.com/bridgestouni/"
+          <a
+            class="footer-link instagram-link"
+            target="-blank"
+            href="https://www.instagram.com/bridgestouni/"
             ><img class="" src="{% static 'images/instagram.svg'%}" alt="" />
           </a>
           <!-- Add YouTube Link Vector Here -->
