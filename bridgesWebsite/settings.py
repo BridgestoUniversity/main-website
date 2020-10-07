@@ -27,7 +27,7 @@ DEBUG = False
 # DEBUG = True
 
 
-ALLOWED_HOSTS = ['bridgestouni.herokuapp.com', 'bridgestouni.com']
+ALLOWED_HOSTS = ['bridgestouni.herokuapp.com', 'bridgestouni.com', '127.0.0.1']
 # ALLOWED_HOSTS = []
 
 
