@@ -76,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'bridgesWebsite.wsgi.application'
+WSGI_APPLICATION = 'bridgesWebsite.wsgi.application'
 
 
 # Database
