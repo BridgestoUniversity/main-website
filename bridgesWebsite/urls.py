@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.staticfiles.storage import staticfiles_storage
+from django.views.generic.base import RedirectView
 import home.views
 import articles.views
 import about.views
@@ -28,5 +30,6 @@ urlpatterns = [
     path('articles/', include('articles.urls')),
     path('about/', include('about.urls')),
     path('contact/', contact.views.contactpage, name='contact-page'),
-    path('linktree/', linktree.views.linktree_page, name='linktree')
+    path('linktree/', linktree.views.linktree_page, name='linktree'),
+    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico')))
 ]
