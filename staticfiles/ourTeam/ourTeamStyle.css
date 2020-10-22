@@ -518,7 +518,7 @@ body {
   background-image: url("/static/images/portraits/hussain-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 22% 50%;
+  background-position: 47% 50%;
 }
 
 #stephanie-image {
@@ -748,7 +748,7 @@ body {
   }
 
   #hussain-image {
-    background-position: 25% 50%;
+    background-position: 49% 50%;
   }
 
   .footer-copyright {
@@ -1089,7 +1089,7 @@ body {
   }
 
   #hussain-image {
-    background-position: 27% 50%;
+    background-position: 48% 50%;
   }
 
   #stephanie-image {

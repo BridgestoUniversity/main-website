@@ -487,63 +487,63 @@ body {
 }
 
 #chiddhanya-image {
-  background-image: url("/static/images/portraits/chiddhanya-min.195821a70d3c.jpg");
+  background-image: url("/static/images/portraits/chiddhanya-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 35% 50%;
 }
 
 #leesa-image {
-  background-image: url("/static/images/portraits/leesa-min.1b39af6fb962.jpg");
+  background-image: url("/static/images/portraits/leesa-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30% 50%;
 }
 
 #harjot-image {
-  background-image: url("/static/images/portraits/harjot-min.500bcca1554a.jpg");
+  background-image: url("/static/images/portraits/harjot-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 40% 50%;
 }
 
 #vi-image {
-  background-image: url("/static/images/portraits/vi-min.312250567ff2.jpg");
+  background-image: url("/static/images/portraits/vi-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 53% 50%;
 }
 
 #hussain-image {
-  background-image: url("/static/images/portraits/hussain-min.4884c4a41cd2.jpg");
+  background-image: url("/static/images/portraits/hussain-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 22% 50%;
+  background-position: 47% 50%;
 }
 
 #stephanie-image {
-  background-image: url("/static/images/portraits/stephanie-min.29c2fae97a5b.JPG");
+  background-image: url("/static/images/portraits/stephanie-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 55% 50%;
 }
 
 #avi-image {
-  background-image: url("/static/images/portraits/avi-min.04fdb8746a81.jpg");
+  background-image: url("/static/images/portraits/avi-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 40% 50%;
 }
 
 #andrick-image {
-  background-image: url("/static/images/portraits/andrick-min.3b9ba6f1ab30.jpg");
+  background-image: url("/static/images/portraits/andrick-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 43% 50%;
 }
 
 #varun-image {
-  background-image: url("/static/images/portraits/varun-min.152076e01ba1.jpg");
+  background-image: url("/static/images/portraits/varun-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 65% 50%;
@@ -748,7 +748,7 @@ body {
   }
 
   #hussain-image {
-    background-position: 25% 50%;
+    background-position: 49% 50%;
   }
 
   .footer-copyright {
@@ -1089,7 +1089,7 @@ body {
   }
 
   #hussain-image {
-    background-position: 27% 50%;
+    background-position: 48% 50%;
   }
 
   #stephanie-image {
