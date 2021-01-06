@@ -1002,7 +1002,7 @@ body {
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 750px) {
   .nav-items ul {
     display: none;
   }

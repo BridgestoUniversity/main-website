@@ -1,11 +1,228 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mentorship Page</title>
+    <title>Mentorship</title>
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="{% static 'mentorship/mentorshipApp.js'%}"></script>
+    <link
+      rel="stylesheet"
+      href="{% static 'mentorship/mentorshipStyle.css'%}"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    Hello world
+    <!-- nav section starts here: -->
+    <nav class="nav-container">
+        <a href="/">
+            <div class="nav-logo">
+                <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
+                <h1 class="logo-text">Bridges</h1>
+            </div>
+        </a>
+      <div class="nav-items">
+        <ul>
+          <li><a href="/" class="nav-item">Home</a></li>
+          <li><a href="/articles/" class="nav-item">Articles</a></li>
+          <li><a href="/mentorship/" class="nav-item">Mentorship</a></li>
+          <li><a href="/about/" class="nav-item">About</a></li>
+          <li class="last-item">
+            <a href="/contact/" class="nav-item">Contact</a>
+          </li>
+        </ul>
+        <div class="bars-container">
+          <span class="top-bar bar"></span>
+          <span class="middle-bar bar"></span>
+          <span class="bottom-bar bar"></span>
+        </div>
+      </div>
+      <!-- The Nav Items when they are expanded from their collapsed form -->
+      <div class="nav-items-collapse">
+        <ul>
+          <li><a href="/" class="nav-item">Home</a></li>
+          <li><a href="/articles/" class="nav-item">Articles</a></li>
+          <li><a href="/mentorship/" class="nav-item">Mentorship</a></li>
+          <li><a href="/about/" class="nav-item">About</a></li>
+          <li><a href="/contact/" class="nav-item">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-container">
+      <section class="hero">
+        <div class="hero-content-container">
+          <div class="head-container">
+            <h2 class="hero-text">Introducing our new Mentorship Program!</h2>
+            <img
+              class="brush-stroke"
+              src="{% static 'images/brush-effect.png'%}"
+              alt=""
+            />
+          </div>
+          <p class="hero-para">
+            Hey everyone! We’re so happy to announce our new mentorship program
+            for students entering and currently in their first year of
+            post-secondary education. Click the link to sign up!
+          </p>
+
+          <a
+          target="-blank"
+          href="https://forms.gle/v9zJ4FT8TC895Fvx9"
+          class="main-button accent-button"
+          >Sign up!</a
+        >
+
+        <div class="hero-image-container">
+          <img
+            class="hero-image"
+            src="{% static 'images/mentorship-illustration.svg'%}"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="offer">
+        <div class="head-container">
+          <h3 class="sub-text">What we have to Offer:</h3>
+          <img
+            class="brush-stroke-sub"
+            src="{% static 'images/brush-effect.png'%}"
+            alt=""
+          />
+        </div>
+  
+        <div class="section-container">
+          <div class="section-content">
+
+            <p class="offer-option mentee-option active">As a Mentee <img class="option-arrow" src="{% static 'images/arrow.svg'%}"/></p>
+            
+            <div class="mentee-info">
+                <ul class="mentee-benefits benefits-list">
+                    <li class="benefit-item"><span class="bold">Early exposure to life in post-secondary education.</span> As a student entering post-secondary education, you may be lost or overwhelmed. Having a mentor provides insight into post-secondary and allows you to be well prepared as you take a huge step towards your education. </li>
+                    <li class="benefit-item"><span class="bold">Expand on your knowledge and skills.</span> In a mentor-mentee relationship, you’re able to peer into your mentor’s experiences and learn a great deal from them. You can even get valuable insight into your career!</li>
+                    <li class="benefit-item"><span class="bold">Build your strengths and overcome your weaknesses.</span> Your mentor is likely able to identify any strengths and weaknesses you have. Their personal experiences and advice can help you build and overcome these skills of yours.</li>
+                    <li class="benefit-item"><span class="bold">Build your network.</span> As you get to know your mentor, you begin to gain insights into the professional industry--and if you’re lucky, you can get introduced to other professionals in the same field!</li>
+                    <li class="benefit-item"><span class="bold">Advice from people who are in your field of study.</span> Learn from the experiences of your seniors and get the inside scoop on what it is like to be studying in your program and the rights and wrongs of post-secondary.</li>
+                    <li class="benefit-item"><span class="bold">Develop your communication skills.</span> Communication is a crucial skill to have in every profession. Being in a mentor-mentee relationship will undoubtedly help you out in that regard.</li>
+                    <li class="benefit-item"><span class="bold">You have someone to look up to.</span> Sometimes, simply having someone to look up to is all you need to help you through a period of uncertainty. While the future is never set in stone, having a mentor who understands your feelings can help you create a plan to overcome these feelings.</li>
+                </ul>
+                <div class="flex-container-2">
+                    <div class="benefit-image">
+                        <img src="{% static 'images/mentee-illustration.svg'%}" alt="" class="mentee-image">
+                    </div>
+                </div>
+            </div>
+            
+
+            <p class="offer-option mentor-option">As a Mentor <img class="option-arrow" src="{% static 'images/arrow.svg'%}"/></p>
+
+            <div class="mentor-info">
+                <ul class="mentor-benefits benefits-list">
+                    <li class="benefit-item"><span class="bold">Leadership experience.</span> Leadership is a key workplace skill that requires tenacity, dedication and practice. This program will provide you with the opportunity to demonstrate and refine your ability to lead and facilitate students in the early stages of their post-secondary education. </li>
+                    <li class="benefit-item"><span class="bold">Build your communication skills.</span> The foundation of every job and relationship relies on communication. Through your interactions with the mentees, you will build on your communication skills and continue to improve them.</li>
+                    <li class="benefit-item"><span class="bold">Expand your network.</span> The need for resourceful connections and networking is more important now than ever. Through this program, you will be able to meet several individuals in your field of study, including mentees and the <span class="italics">bridges</span> staff, that will help you in your educational and professional journey. </li>
+                    <li class="benefit-item"><span class="bold">Share your knowledge.</span> Many of us have wished for a helping hand throughout several points in our education. As a mentor, you will have the ability to guide your mentees and be what your younger self needed. </li>
+                    <li class="benefit-item"><span class="bold">Add an experience to your resume.</span> This mentorship will allow you to build essential skills that employers are looking for. As a mentor in this program, you will convey to potential employers that you possess the abilities to exceed in leadership positions that require patience and a high degree of written and verbal communication.</li>
+            </ul>
+            <div class="flex-container-2">
+                <div class="benefit-image">
+                    <img src="{% static 'images/mentor-illustration.svg'%}" alt="" class="mentor-image">
+                </div>
+            </div>
+            
+        </div>
+
+        </div>
+      </section>
+
+      <section class="get-involved">
+        <div class="head-container">
+          <h3 class="sub-text">How to get Involved!</h3>
+          <img
+            class="brush-stroke-sub"
+            src="{% static 'images/brush-effect.png'%}"
+            alt=""
+          />
+        </div>
+  
+        <div class="section-container">
+          <div class="section-content">
+            <p>
+                Signing up for our mentorship is super easy! All you need to do is click the link to sign up, select whether you want to be a mentor or a mentee, and answer the questions on the form! Please note that to be a mentor, you must have completed at least one year of post-secondary education. Hope to see you soon, and spread the word!
+            </p>
+          </div>
+  
+          <div class="flex-container">
+            <div class="section-image">
+              <img
+                class="get-involved-image"
+                src="{% static 'images/vision-illustration.svg'%}"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      <!-- footer section starts here: -->
+      <footer class="footer-container">
+        <div class="footer-content">
+          <p class="footer-slogan">
+            <span>Bridges to Success.</span>
+            <span>Bridges to Connections.</span>
+            <span>Bridges to University.</span>
+          </p>
+          <ul>
+            <li>
+              <a
+                href="{% static 'documents/privacy-policy.pdf'%}"
+                class="footer-item" target="_blank"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
+          <p class="copyright-text">Bridges © 2020</p>
+        </div>
+        <div class="footer-links">
+          <!-- Add LinkedIn Link Vector Here -->
+          <a
+            class="footer-link linkedin-link"
+            target="-blank"
+            href="https://www.linkedin.com/company/54086203/"
+            ><img class="" src="{% static 'images/linkedin.svg'%}" alt="" />
+          </a>
+          <a
+            class="footer-link youtube-link"
+            target="-blank"
+            href="https://www.youtube.com/channel/UCuYtMcz5KsBxxClplacyVwA"
+            ><img class="" src="{% static 'images/youtube.svg'%}" alt=""
+          /></a>
+          <a
+            class="footer-link instagram-link"
+            target="-blank"
+            href="https://www.instagram.com/bridgestouni/"
+            ><img class="" src="{% static 'images/instagram.svg'%}" alt="" />
+          </a>
+          <!-- Add YouTube Link Vector Here -->
+          <!-- Add Instagram Link Vector Here -->
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

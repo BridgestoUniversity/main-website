@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="shortcut icon" href="{% static 'favicon.ico' %}"/>
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
@@ -26,14 +26,17 @@
   <body>
     <!-- nav section starts here: -->
     <nav class="nav-container">
-      <div class="nav-logo">
-        <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
-        <h1 class="logo-text">Bridges</h1>
-      </div>
+      <a href="/">
+        <div class="nav-logo">
+          <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
+          <h1 class="logo-text">Bridges</h1>
+        </div>
+      </a>
       <div class="nav-items">
         <ul>
           <li><a href="/" class="nav-item">Home</a></li>
           <li><a href="/articles/" class="nav-item">Articles</a></li>
+          <li><a href="/mentorship/" class="nav-item">Mentorship</a></li>
           <li><a href="/about/" class="nav-item">About</a></li>
           <li class="last-item">
             <a href="/contact/" class="nav-item">Contact</a>
@@ -50,6 +53,7 @@
         <ul>
           <li><a href="/" class="nav-item">Home</a></li>
           <li><a href="/articles/" class="nav-item">Articles</a></li>
+          <li><a href="/mentorship/" class="nav-item">Mentorship</a></li>
           <li><a href="/about/" class="nav-item">About</a></li>
           <li><a href="/contact/" class="nav-item">Contact</a></li>
         </ul>
@@ -122,10 +126,6 @@
           <span>Bridges to University.</span>
         </p>
         <ul>
-          <li><a href="/" class="footer-item">Home</a></li>
-          <li><a href="/articles/" class="footer-item">Articles</a></li>
-          <li><a href="/about/" class="footer-item">About</a></li>
-          <li><a href="/contact/" class="footer-item">Contact</a></li>
           <li>
             <a
               target="_blank"
