@@ -22,6 +22,7 @@ import articles.views
 import about.views
 import contact.views
 import linktree.views
+import mentorship.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,5 +32,6 @@ urlpatterns = [
     path('about/', include('about.urls')),
     path('contact/', contact.views.contactpage, name='contact-page'),
     path('linktree/', linktree.views.linktree_page, name='linktree'),
-    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico')))
+    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico'))),
+    path('mentorship/', mentorship.views.mentorship_page, name='mentorship')
 ]

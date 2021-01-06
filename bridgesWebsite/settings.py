@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'about.apps.AboutConfig',
     'linktree.apps.LinktreeConfig',
+    'mentorship.apps.MentorshipConfig',
     'contact.apps.ContactConfig'
 ]
 
