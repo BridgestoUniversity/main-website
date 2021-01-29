@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linktree</title>
+    <title>Bridges Linktree</title>
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
@@ -25,134 +25,36 @@
   </head>
   <body>
     <!-- nav section starts here: -->
-    <nav class="nav-container">
-      <a href="/">
-        <div class="nav-logo">
-          <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
-          <h1 class="logo-text">Bridges</h1>
+
+
+    <section class="main">
+
+      <div class="profile-section">
+        <div class="profile-image">
+          <img class="logo-image" src="{% static 'images/logo-black.png'%}" alt="Bridges Logo"/>
         </div>
-      </a>
-      <div class="nav-items">
-        <ul>
-          <li><a href="/" class="nav-item">Home</a></li>
-          <li><a href="/articles/" class="nav-item">Articles</a></li>
-          <li><a href="/mentorship/" class="nav-item">Mentorship</a></li>
-          <li><a href="/about/" class="nav-item">About</a></li>
-          <li class="last-item">
-            <a href="/contact/" class="nav-item">Contact</a>
-          </li>
-        </ul>
-        <div class="bars-container">
-          <span class="top-bar bar"></span>
-          <span class="middle-bar bar"></span>
-          <span class="bottom-bar bar"></span>
+        <div class="profile-tag">
+          <h2>@bridgestouni</h2>
         </div>
       </div>
-      <!-- The Nav Items when they are expanded from their collapsed form -->
-      <div class="nav-items-collapse">
-        <ul>
-          <li><a href="/" class="nav-item">Home</a></li>
-          <li><a href="/articles/" class="nav-item">Articles</a></li>
-          <li><a href="/mentorship/" class="nav-item">Mentorship</a></li>
-          <li><a href="/about/" class="nav-item">About</a></li>
-          <li><a href="/contact/" class="nav-item">Contact</a></li>
+
+      <div class="links-section">
+        <ul class="links-list">
+          <a href="https://www.instagram.com/bridgestouni/" target="_blank" class="link-item"><li>Instagram</li></a>
+          <a href="https://www.tiktok.com/@bridgestouni" target="_blank" class="link-item"><li>TikTok</li></a>
+          <a href="https://www.linkedin.com/company/bridges-to-university/" target="_blank" class="link-item"><li>LinkedIn</li></a>
+          <a href="http://www.bridgestouni.com/" target="_blank" class="link-item"><li>Website</li></a>
+          <a href="https://forms.gle/rfsbsdqj3nJaaiKo8" target="_blank" class="link-item"><li>Newsletter Signup</li></a>
+          <!-- <a href="" target="_blank" class="link-item"><li>Discord</li></a> -->
+          <a href="mailto:bridgestouniversity@gmail.com?subject=Hey!" target="_blank" class="link-item"><li>Email</li></a>
+          <a href="https://www.twitch.tv/bridgestouni" target="_blank" class="link-item"><li>Twitch</li></a>
+          <a href="https://www.youtube.com/channel/UCuYtMcz5KsBxxClplacyVwA" target="_blank" class="link-item"><li>YouTube</li></a>
         </ul>
       </div>
-    </nav>
 
-    <div class="main-container">
-      <section class="hero">
-        <div class="hero-content-container">
-          <div class="head-container">
-            <h2 class="hero-text">Get in touch!</h2>
-            <img
-              class="brush-stroke"
-              src="{% static 'images/brush-effect.png'%}"
-              alt=""
-            />
-          </div>
-          <p class="hero-para">
-            Feel free to reach out and send a message or view some of our
-            content on other platforms! Let us know what you think, and
-            potentially any suggestions you may have. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Sed, pariatur!
-          </p>
-
-          <ul class="hero-links">
-            <li>
-              <a
-                class="hero-link-item"
-                target="-blank"
-                href="https://www.instagram.com/bridgestouni/"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                class="hero-link-item"
-                target="-blank"
-                href="https://www.linkedin.com/company/54086203/"
-                >LinkedIn</a
-              >
-            </li>
-            <li><a class="hero-link-item">Email</a></li>
-          </ul>
-        </div>
-        <div class="hero-image-container">
-          <img
-            class="hero-image"
-            src="{% static 'images/contact-illustration.svg'%}"
-            alt=""
-          />
-        </div>
-      </section>
-
-      <!-- footer section starts here: -->
-      <footer class="footer-container">
-        <div class="footer-content">
-          <p class="footer-slogan">
-            <span>Bridges to Success.</span>
-            <span>Bridges to Connections.</span>
-            <span>Bridges to University.</span>
-          </p>
-          <ul>
-            <li>
-              <a
-                href="{% static 'documents/privacy-policy.pdf'%}"
-                class="footer-item"
-                >Privacy Policy</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="footer-copyright">
-          <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
-          <p class="copyright-text">Bridges © 2020</p>
-        </div>
-        <div class="footer-links">
-          <!-- Add LinkedIn Link Vector Here -->
-          <a
-            class="footer-link linkedin-link"
-            target="-blank"
-            href="https://www.linkedin.com/company/54086203/"
-            ><img class="" src="{% static 'images/linkedin.svg'%}" alt="" />
-          </a>
-          <a
-            class="footer-link youtube-link"
-            target="-blank"
-            href="https://www.youtube.com/channel/UCuYtMcz5KsBxxClplacyVwA"
-            ><img class="" src="{% static 'images/youtube.svg'%}" alt=""
-          /></a>
-          <a
-            class="footer-link instagram-link"
-            target="-blank"
-            href="https://www.instagram.com/bridgestouni/"
-            ><img class="" src="{% static 'images/instagram.svg'%}" alt="" />
-          </a>
-          <!-- Add YouTube Link Vector Here -->
-          <!-- Add Instagram Link Vector Here -->
-        </div>
-      </footer>
+    </section>
+    
+      
     </div>
   </body>
 </html>
