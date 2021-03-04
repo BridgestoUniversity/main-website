@@ -20,6 +20,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: #3d3b3d;
 }
 
 .accent {
@@ -44,7 +45,7 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 2px solid #3d3b3d;
+  /* border: 2px solid white; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +54,9 @@ body {
 
 .logo-image {
   width: 50%;
+  position: relative;
+  /* left: 2px; */
+  /* border: 1px solid red; */
 }
 
 .profile-tag {
@@ -65,6 +69,7 @@ body {
   padding: 0;
   text-transform: lowercase;
   font-weight: 500;
+  color: white;
 }
 
 .links-section {
@@ -84,10 +89,10 @@ body {
 }
 
 .link-item {
-  border: 2px solid #3d3b3d;
+  border: 2px solid #ffffff;
   display: inline-block;
   width: calc(100% - 40px);
-  background-color: #3d3b3d;
+  background-color: white;
   padding: 20px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -95,11 +100,11 @@ body {
 }
 
 .link-item:hover {
-  background-color: white;
+  background-color: #3d3b3d;
 }
 
 .link-item:hover li {
-  color: #3d3b3d;
+  color: white;
 }
 
 .link-item:first-of-type {
@@ -112,7 +117,7 @@ body {
 
 .link-item li {
   transition: 0.1s ease-in-out color;
-  color: white;
+  color: #3d3b3d;
   text-transform: lowercase;
   text-align: center;
   font-weight: 500;
