@@ -390,9 +390,9 @@ body {
 
 .mentee-info,
 .mentor-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: block;
+  /* flex-direction: row; */
+  /* align-items: center; */
 }
 
 .flex-container-2 {
@@ -435,7 +435,7 @@ body {
 
 .active + .mentee-info,
 .active + .mentor-info {
-  display: flex;
+  display: block;
 }
 
 .benefit-item {

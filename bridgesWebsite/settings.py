@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'about.apps.AboutConfig',
     'linktree.apps.LinktreeConfig',
     'mentorship.apps.MentorshipConfig',
-    'contact.apps.ContactConfig'
+    'contact.apps.ContactConfig',
+    'joinOurTeam'
 ]
 
 MIDDLEWARE = [

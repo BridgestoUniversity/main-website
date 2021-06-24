@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+# from joinOurTeam.views import joinOurTeam_page
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.staticfiles.storage import staticfiles_storage
@@ -23,6 +24,7 @@ import about.views
 import contact.views
 import linktree.views
 import mentorship.views
+import joinOurTeam.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,5 +35,6 @@ urlpatterns = [
     path('contact/', contact.views.contactpage, name='contact-page'),
     path('linktree/', linktree.views.linktree_page, name='linktree'),
     path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('img/favicon.ico'))),
-    path('mentorship/', mentorship.views.mentorship_page, name='mentorship')
+    path('mentorship/', mentorship.views.mentorship_page, name='mentorship'),
+    path('joinOurTeam/', joinOurTeam.views.joinOurTeam_page, name='join-our-team')
 ]

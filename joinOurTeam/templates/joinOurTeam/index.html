@@ -1,0 +1,548 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-STSV2HNZVW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-STSV2HNZVW");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join our Team</title>
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="{% static 'joinOurTeam/joinOurTeamApp.js'%}"></script>
+    <link
+      rel="stylesheet"
+      href="{% static 'joinOurTeam/joinOurTeamStyle.css'%}"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav section starts here: -->
+    <nav class="nav-container">
+      <a href="/">
+        <div class="nav-logo">
+          <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
+          <h1 class="logo-text">Bridges</h1>
+        </div>
+      </a>
+      <div class="nav-items">
+        <ul>
+          <li><a href="/" class="nav-item">Home</a></li>
+          <li><a href="/articles/" class="nav-item">Articles</a></li>
+          <li>
+            <a href="/joinOurTeam/" class="nav-item">Join&nbsp;our&nbsp;Team</a>
+          </li>
+          <li><a href="/about/" class="nav-item">About</a></li>
+          <li class="last-item">
+            <a href="/contact/" class="nav-item">Contact</a>
+          </li>
+        </ul>
+        <div class="bars-container">
+          <span class="top-bar bar"></span>
+          <span class="middle-bar bar"></span>
+          <span class="bottom-bar bar"></span>
+        </div>
+      </div>
+      <!-- The Nav Items when they are expanded from their collapsed form -->
+      <div class="nav-items-collapse">
+        <ul>
+          <li><a href="/" class="nav-item">Home</a></li>
+          <li><a href="/articles/" class="nav-item">Articles</a></li>
+          <li>
+            <a href="/joinOurTeam/" class="nav-item">Join&nbsp;our&nbsp;Team</a>
+          </li>
+          <li><a href="/about/" class="nav-item">About</a></li>
+          <li><a href="/contact/" class="nav-item">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content-container">
+        <div class="head-container">
+          <h2 class="hero-text">We're hiring!</h2>
+          <img
+            class="brush-stroke"
+            src="{% static 'images/brush-effect.png'%}"
+            alt=""
+          />
+        </div>
+        <p class="hero-para">
+          Hello everyone! We’re happy to announce that we are recruiting
+          second-year students for the 2021/22 school year! You will get the
+          chance to work behind the scenes and see where all the magic happens!
+        </p>
+        <p class="hero-para">
+          Through this experience, you will get to help several high school
+          students entering post-secondary while building your leadership and
+          communication skills and expanding your knowledge. You will also get
+          the chance to expand your network and add experience to your resume.
+        </p>
+        <p class="hero-para">
+          The application process is easy! All you need to do is click the link
+          to sign up, select the role you want to apply for, answer the
+          questions on the form, and interview with us! We look forward to
+          getting to know you all! Hope to see you soon, and spread the word!
+        </p>
+
+        <a
+          target="_blank"
+          href="https://forms.gle/38ytcD8PD2cPAnPr5"
+          class="main-button accent-button"
+          >Apply now!</a
+        >
+      </div>
+      <div class="hero-image-container">
+        <img
+          class="hero-image"
+          src="{% static 'images/recruiting.svg'%}"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="head-container">
+        <h3 class="sub-text">View our available positions:</h3>
+        <img
+          class="brush-stroke-sub"
+          src="{% static 'images/brush-effect.png'%}"
+          alt=""
+        />
+      </div>
+
+      <div class="section-container">
+        <div class="section-content">
+          <p class="offer-option mentee-option">
+            Marketing (Social Media Coordinators) - 3 position(s)
+            <img class="option-arrow" src="{% static 'images/arrow.svg'%}" />
+          </p>
+          <div class="mentee-info">
+            <p class="benefit-head">Requirements</p>
+            <ul class="mentee-benefits benefits-list">
+              <li class="benefit-item">
+                2nd year student attending a post-secondary institution within
+                Canada.
+              </li>
+              <li class="benefit-item">
+                Experience with content creation softwares (i.e. canva*, adobe
+                suite).
+              </li>
+              <li class="benefit-item">
+                Social media savvy (Especially with Instagram and TikTok).
+              </li>
+              <li class="benefit-item">
+                Communicate professionally over emails/video calls.
+              </li>
+              <li class="benefit-item">
+                Keen attention to details and willingness to learn.
+              </li>
+              <li class="benefit-item">
+                Previous marketing-related experience is an asset but not
+                required.
+              </li>
+              <li class="benefit-item">
+                Submission of any previous art/design/photography work will be
+                required.
+              </li>
+            </ul>
+            <p class="benefit-head">Job Description</p>
+            <ul class="mentee-benefits benefits-list">
+              <li class="benefit-item">
+                Brainstorming and contributing ideas for
+                <em>bridges</em> content (e.g. social media posts and
+                newsletters).
+              </li>
+              <li class="benefit-item">
+                Formatting and designing the official
+                <em>bridges</em> newsletter.
+              </li>
+              <li class="benefit-item">
+                Overseeing and ensuring <em>bridges</em> social media accounts
+                fit brand aesthetic.
+              </li>
+              <li class="benefit-item">
+                Responsible for creating and posting unique social media and
+                promotional content that aligns with business goals. and
+                increases brand awareness.
+              </li>
+              <li class="benefit-item">
+                Utilize social media analytics in order to improve audience
+                interaction.
+              </li>
+              <li class="benefit-item">
+                Attending biweekly meetings with the marketing team to recap,
+                create, and strategize.
+              </li>
+              <li class="benefit-item">
+                Work is remote and at your own pace but ~ 2 hours of
+                commitment/week.
+              </li>
+            </ul>
+            <div class="flex-container-2" style="display: none">
+              <div class="benefit-image">
+                <img
+                  src="{% static 'images/mentee-illustration.svg'%}"
+                  alt=""
+                  class="mentee-image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <p class="offer-option mentor-option">
+            External Relations (Outreach Coordinator) - 1 position(s)
+            <img class="option-arrow" src="{% static 'images/arrow.svg'%}" />
+          </p>
+
+          <div class="mentor-info">
+            <p class="benefit-head">Requirements</p>
+            <ul class="mentee-benefits benefits-list">
+              <li class="benefit-item">
+                2nd year student attending a post-secondary institution within
+                Canada.
+              </li>
+              <li class="benefit-item">
+                Able to communicate and coordinate with peers both in meetings
+                and on slack.
+              </li>
+              <li class="benefit-item">
+                Able to communicate professionally over emails and video calls
+                with prospective collaborators.
+              </li>
+              <li class="benefit-item">
+                Proficiency in Linkedin in terms of outreach, and applications
+                such as zoom,google meets, etc.
+              </li>
+              <li class="benefit-item">
+                Experience in planning or coordinating meetings is an asset but
+                not required.
+              </li>
+            </ul>
+            <p class="benefit-head">Job Description</p>
+            <ul class="mentee-benefits benefits-list">
+              <li class="benefit-item">
+                Brainstorming and contributing ideas for
+                <em>bridges</em> newsletters.
+              </li>
+              <li class="benefit-item">
+                Ability to conduct research for possible collaborations for
+                <em>bridges</em>.
+              </li>
+              <li class="benefit-item">
+                Responsible for creating posts on LinkedIn and building
+                meaningful connections.
+              </li>
+              <li class="benefit-item">
+                Reshare posts that are of value to our audience (on linkedin).
+              </li>
+              <li class="benefit-item">
+                Communicate via email or meeting with possible collaborators.
+              </li>
+              <li class="benefit-item">
+                Overseeing and ensuring the <em>bridges</em> LinkedIn reflects
+                the <em>bridges</em> brand.
+              </li>
+              <li class="benefit-item">
+                Utilize LinkedIn analytics in order to improve audience
+                interaction.
+              </li>
+            </ul>
+            <div class="flex-container-2" style="display: none">
+              <div class="benefit-image">
+                <img
+                  src="{% static 'images/mentor-illustration.svg'%}"
+                  alt=""
+                  class="mentor-image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <p class="offer-option dev-option">
+            Development (Junior Front/Back End Developers) - 2 positon(s)
+            <img class="option-arrow" src="{% static 'images/arrow.svg'%}" />
+          </p>
+
+          <div class="dev-info">
+            <p class="benefit-head">Requirements</p>
+            <ul class="mentee-benefits benefits-list">
+              <li class="benefit-item">
+                General requirements:
+                <ul class="inner-benefits-list">
+                  <li class="inner-benefit-item">
+                    2nd year student attending a post-secondary institution
+                    within Canada.
+                  </li>
+                  <li class="inner-benefit-item">
+                    Ability to communicate and coordinate with other team
+                    members, through emails or video calls.
+                  </li>
+                  <li class="inner-benefit-item">
+                    Contribute and brainstorm creative ideas to improve the
+                    overall service.
+                  </li>
+                </ul>
+              </li>
+              <li class="benefit-item">
+                Front-end requirements:
+                <ul class="inner-benefits-list">
+                  <li class="inner-benefit-item">
+                    Knowledge of basic front-end practices (should know HTML,
+                    CSS and Javascript).
+                  </li>
+                  <li class="inner-benefit-item">
+                    Ability to quickly learn and adapt to new softwares and
+                    programs.
+                  </li>
+                  <li class="inner-benefit-item">
+                    Submission of a project or website created in the past to
+                    demonstrate knowledge in front-end is optional, but highly
+                    recommended.
+                  </li>
+                </ul>
+              </li>
+              <li class="benefit-item">
+                Back-end requirements:
+                <ul class="inner-benefits-list">
+                  <li class="inner-benefit-item">
+                    Knowledge of basic back-end practices and some experience
+                    working with back-end frameworks or databases.
+                  </li>
+                  <li class="inner-benefit-item">
+                    Experience working with Django would be an asset but is not
+                    required.
+                  </li>
+                  <li class="inner-benefit-item">
+                    A project with some back-end functionality is preferred, but
+                    highly recommended.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <p class="benefit-head">Job Description</p>
+            <ul class="mentee-benefits benefits-list">
+              <li class="benefit-item">
+                General requirements:
+                <ul class="inner-benefits-list">
+                  <li class="inner-benefit-item">
+                    Brainstorming and contributing ideas for
+                    <em>bridges</em> newsletters.
+                  </li>
+                  <li class="inner-benefit-item">
+                    Maintenance of the current <em>bridges</em> website and
+                    future modifications.
+                  </li>
+                  <li class="inner-benefit-item">
+                    Work in coordination with Head Developers to integrate new
+                    features (new pages, sections or logic) into the
+                    <em>bridges</em> website.
+                  </li>
+                  <li class="inner-benefit-item">
+                    Work on email utilities, form creation, google analytics,
+                    and podcast editing (training will be provided but
+                    experience is an asset).
+                  </li>
+                  <li class="inner-benefit-item">
+                    Google analytics and SEO improvements will be made by both
+                    our front-end and back-end developers.
+                  </li>
+                  <li class="inner-benefit-item">
+                    All dev work will be done remotely but will be approximately
+                    2-5 hrs/week commitment (depending on the projects in
+                    progress).
+                  </li>
+                </ul>
+              </li>
+              <li class="benefit-item">
+                Front-end requirements:
+                <ul class="inner-benefits-list">
+                  <li class="inner-benefit-item">
+                    Front-end developers will focus on taking care of UI issues
+                    or updates to our site as well as sending out our biweekly
+                    newsletters.
+                  </li>
+                  <li class="inner-benefit-item">
+                    Create forms for applications, surveys, etc and link them to
+                    our site.
+                  </li>
+                  <li class="inner-benefit-item">
+                    Submission of a project or website created in the past to
+                    demonstrate knowledge in front-end is optional, but highly
+                    recommended.
+                  </li>
+                </ul>
+              </li>
+              <li class="benefit-item">
+                Back-end requirements:
+                <ul class="inner-benefits-list">
+                  <li class="inner-benefit-item">
+                    Back-end developers will focus on taking care of complicated
+                    bugs, issues or updates.
+                  </li>
+                  <li class="inner-benefit-item">
+                    Work alongside the Head of Back-end development to manage
+                    the database and create any needed additions.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="flex-container-2" style="display: none">
+              <div class="benefit-image">
+                <img
+                  src="{% static 'images/mentor-illustration.svg'%}"
+                  alt=""
+                  class="mentor-image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- fesfse -->
+
+          <p class="offer-option editorial-option">
+            Editorial (Junior Editors) - 2 position(s)
+            <img class="option-arrow" src="{% static 'images/arrow.svg'%}" />
+          </p>
+
+          <div class="editorial-info">
+            <p class="benefit-head">Requirements</p>
+            <ul class="mentee-benefits benefits-list">
+              <li class="benefit-item">
+                2nd year student attending a post-secondary institution within
+                Canada.
+              </li>
+              <li class="benefit-item">
+                Past experience in persuasive or informative writing.
+              </li>
+              <li class="benefit-item">
+                Showcase a wide variety of transferable skills such as
+                persuasive writing, verbal and written communication, and
+                attention to detail.
+              </li>
+              <li class="benefit-item">
+                Ability to utilize basic functions with Google Suite
+                applications (Google Docs in particular).
+              </li>
+              <li class="benefit-item">
+                Sample paragraph about the importance, or lack thereof, of a
+                schedule.
+              </li>
+            </ul>
+            <p class="benefit-head">Job Description</p>
+            <ul class="mentee-benefits benefits-list">
+              <li class="benefit-item">
+                Brainstorm ideas for the biweekly newsletter.
+                <ul class="inner-benefits-list">
+                  <li class="inner-benefit-item">
+                    Applies to both the overall topic and the articles that will
+                    be written.
+                  </li>
+                </ul>
+              </li>
+              <li class="benefit-item">
+                Writing and editing articles for the biweekly newsletter.
+              </li>
+              <li class="benefit-item">
+                Performing final quality control checks on the newsletter prior
+                to release.
+              </li>
+              <li class="benefit-item">
+                Look over any documents or blurbs that are set to be published
+                on social media platforms.
+              </li>
+              <li class="benefit-item">
+                Work will be remote and can be done on your own time (no set
+                schedule).
+              </li>
+              <li class="benefit-item">
+                Time required per week will vary, but approximately 2h/week if
+                everything is distributed evenly.
+              </li>
+            </ul>
+            <div class="flex-container-2" style="display: none">
+              <div class="benefit-image">
+                <img
+                  src="{% static 'images/mentor-illustration.svg'%}"
+                  alt=""
+                  class="mentor-image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-container">
+      <!-- footer section starts here: -->
+      <footer class="footer-container">
+        <div class="footer-content">
+          <p class="footer-slogan">
+            <span>Bridges to Success.</span>
+            <span>Bridges to Connections.</span>
+            <span>Bridges to University.</span>
+          </p>
+          <ul>
+            <li>
+              <a
+                href="{% static 'documents/privacy-policy.pdf'%}"
+                class="footer-item"
+                target="_blank"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
+          <p class="copyright-text">Bridges © 2020</p>
+        </div>
+        <div class="footer-links">
+          <!-- Add LinkedIn Link Vector Here -->
+          <a
+            class="footer-link linkedin-link"
+            target="-blank"
+            href="https://www.linkedin.com/company/54086203/"
+            ><img class="" src="{% static 'images/linkedin.svg'%}" alt="" />
+          </a>
+          <a
+            class="footer-link youtube-link"
+            target="-blank"
+            href="https://www.youtube.com/channel/UCuYtMcz5KsBxxClplacyVwA"
+            ><img class="" src="{% static 'images/youtube.svg'%}" alt=""
+          /></a>
+          <a
+            class="footer-link instagram-link"
+            target="-blank"
+            href="https://www.instagram.com/bridgestouni/"
+            ><img class="" src="{% static 'images/instagram.svg'%}" alt="" />
+          </a>
+          <!-- Add YouTube Link Vector Here -->
+          <!-- Add Instagram Link Vector Here -->
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
