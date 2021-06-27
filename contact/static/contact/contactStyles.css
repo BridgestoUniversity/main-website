@@ -476,6 +476,7 @@ textarea {
 }
 
 .brush-stroke-sub-sub {
+  display: none;
   position: absolute;
   top: -2px;
   left: -16px;
