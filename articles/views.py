@@ -10,6 +10,7 @@ def articles_page(request):
     issues = Articles.objects
     newestIssuesOrder = issues.order_by('-date')
     latestIssue = newestIssuesOrder.first()
+    debugStr = "" 
 
     reqMethod = request.method
 
@@ -43,11 +44,12 @@ def articles_page(request):
             issues = issues.order_by('-date')
             filteredIssues = issues
 
-        return render(request, 'articles/index.html', {"issues": filteredIssues, "latestIssue": latestIssue,  "debugString": debugStr})
+    return render(request, 'articles/index.html', {"issues": filteredIssues, "latestIssue": latestIssue,  "debugString": debugStr})
     # else:
     #     issues = issues.order_by('-date')
     #     latestIssue = issues.first()
     #     return render(request, 'articles/index.html', {"issues": issues, "latestIssue": latestIssue, "reqMethod": reqMethod, "debugString": "nothing"})
+
 
 
 def articles_testing(request, id):
