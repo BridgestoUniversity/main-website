@@ -50,9 +50,6 @@
         <ul>
           <li><a href="/" class="nav-item">Home</a></li>
           <li><a href="/articles/" class="nav-item">Articles</a></li>
-          <li>
-            <a href="/joinOurTeam/" class="nav-item">Join&nbsp;our&nbsp;Team</a>
-          </li>
           <li><a href="/about/" class="nav-item">About</a></li>
           <li class="last-item">
             <a href="/contact/" class="nav-item pill-button">Contact</a>
@@ -69,9 +66,6 @@
         <ul>
           <li><a href="/" class="nav-item">Home</a></li>
           <li><a href="/articles/" class="nav-item">Articles</a></li>
-          <li>
-            <a href="/joinOurTeam/" class="nav-item">Join&nbsp;our&nbsp;Team</a>
-          </li>
           <li><a href="/about/" class="nav-item">About</a></li>
           <li><a href="/contact/" class="nav-item">Contact</a></li>
         </ul>
@@ -108,7 +102,11 @@
             name="search"
             value="search"
           >
-            <img src="{% static 'images/search-button.svg'%}" alt="Search" />
+            <img
+              class="search-button-image"
+              src="{% static 'images/search-button.svg'%}"
+              alt="Search"
+            />
           </button>
           <!-- <input
             class="search-button"
