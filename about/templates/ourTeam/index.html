@@ -190,30 +190,32 @@
       </div>
     </section>
 
+   
     <!-- footer section starts here: -->
-    <footer class="footer-container">
-      <div class="footer-content">
-        <p class="footer-slogan">
-          <span>Bridges to Success.</span> <span>Bridges to Connections.</span>
-          <span>Bridges to University.</span>
-        </p>
-        <ul>
-          <li>
-            <a
-              href="{% static 'documents/privacy-policy.pdf'%}"
-              class="footer-item"
-              >Privacy Policy</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <img class="logo-image" src="{% static 'images/logo-black.png'%}" />
-        <p class="copyright-text">Bridges © 2020</p>
-      </div>
-      <div class="footer-links">
-        <!-- Add LinkedIn Link Vector Here -->
-        <a
+    <div class="footer-box">
+      <footer class="footer-container">
+        <div class="footer-content">
+          <p class="footer-slogan">
+            <span>bridges to success.</span> <span>bridges to connections.</span>
+            <span>bridges to university.</span>
+          </p>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                href="{% static 'documents/privacy-policy.pdf'%}"
+                class="footer-item"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <img class="logo-image" src="{% static 'images/logo-white.png'%}" />
+        </div>
+        <div class="footer-links">
+          <!-- Add LinkedIn Link Vector Here -->
+          <a
           class="footer-link linkedin-link"
           target="-blank"
           href="https://www.linkedin.com/company/54086203/"
@@ -226,14 +228,26 @@
           ><img class="" src="{% static 'images/youtube.svg'%}" alt=""
         /></a>
         <a
+          class="footer-link tiktok-link"
+          target="-blank"
+          href="https://www.tiktok.com/@bridgestouni?lang=en"
+          ><img class="" src="{% static 'images/tiktok.svg'%}" alt=""
+        /></a>
+        <a
+          class="footer-link discord-link"
+          target="-blank"
+          href="https://discord.gg/"
+          ><img class="" src="{% static 'images/discord.svg'%}" alt=""
+        /></a>
+        <a
           class="footer-link instagram-link"
           target="-blank"
           href="https://www.instagram.com/bridgestouni/"
           ><img class="" src="{% static 'images/instagram.svg'%}" alt="" />
         </a>
-        <!-- Add YouTube Link Vector Here -->
-        <!-- Add Instagram Link Vector Here -->
-      </div>
-    </footer>
+  
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

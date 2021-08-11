@@ -445,13 +445,20 @@ body {
 }
 
 /* FOOTER */
+.footer-box {
+  background: rgb(59, 59, 59);
+  margin-left: -60px;
+margin-right: -60px;
+ background-clip: border-box;  
+}
 .footer-container {
-  /* border: 1px solid black; */
+  padding: 0 60px;
+   border: 1px solid black; 
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-top: 10px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer-content ul {
@@ -466,6 +473,7 @@ body {
   font-weight: 300;
   margin-bottom: 10px;
   line-height: 25px;
+  color: aliceblue;
 }
 
 .footer-item {
@@ -502,8 +510,8 @@ body {
 }
 
 .footer-copyright .logo-image {
-  width: 20px;
-  margin-bottom: 5px;
+  width: 30px;
+  margin-bottom: 20px;
 }
 
 .footer-copyright .copyright-text {
